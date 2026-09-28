@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- Green accent: right hemisphere fill, no gap -->
+  <path d="M31 18V40C31 40 35.5 42.5 37.46 42.5C41.44 42.5 44.66 39.28 44.66 35.3C44.66 33.89 44.23 32.53 43.44 31.41C45.4 29.95 46.66 27.62 46.66 25C46.66 20.58 43.08 17 38.66 17C36.76 17 35.02 17.66 33.66 18.76C32.7 17.98 31.8 17.6 31 18Z" fill="#5DCEA5"/>
+  <!-- Brain outline -->
+  <path d="M23 17C18.58 17 15 20.58 15 25C15 27.62 16.26 29.95 18.22 31.41C17.43 32.53 17 33.89 17 35.3C17 39.28 20.22 42.5 24.2 42.5C27.16 42.5 29.71 40.72 30.83 38.18C31.95 40.72 34.5 42.5 37.46 42.5C41.44 42.5 44.66 39.28 44.66 35.3C44.66 33.89 44.23 32.53 43.44 31.41C45.4 29.95 46.66 27.62 46.66 25C46.66 20.58 43.08 17 38.66 17C36.76 17 35.02 17.66 33.66 18.76C32.3 17.66 30.56 17 28.66 17H23Z" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Center line -->
+  <path d="M31 20V40" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Left wrinkle -->
+  <path d="M22 24C19.79 24 18 25.79 18 28C18 29.41 18.73 30.66 19.83 31.37" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Right wrinkle -->
+  <path d="M40 24C42.21 24 44 25.79 44 28C44 29.41 43.27 30.66 42.17 31.37" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

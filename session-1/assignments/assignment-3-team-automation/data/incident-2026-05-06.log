@@ -1,0 +1,180 @@
+2026-05-06T14:00:00.022Z [ERROR] queue.worker: fetch failed: ECONNREFUSED downstream=metrics.internal:9090
+2026-05-06T14:00:00.201Z [ERROR] queue.worker: fetch failed: ECONNREFUSED downstream=metrics.internal:9090
+2026-05-06T14:00:00.310Z [INFO ] api.gateway: handled GET /v1/feed in 621ms
+2026-05-06T14:00:00.415Z [INFO ] cache.redis: evicted 395 keys, memory at 94%
+2026-05-06T14:00:00.431Z [INFO ] api.gateway: handled GET /v1/users/28985 in 745ms
+2026-05-06T14:00:00.546Z [INFO ] api.gateway: handled GET /v1/users/18723 in 496ms
+-- corrupted line: 2405a33c processed job {id} i
+2026-05-06T14:00:00.651Z [INFO ] api.gateway: handled POST /v1/checkout in 108ms
+2026-05-06T14:00:00.830Z [ERROR] auth.jwt: token verification failed: signature mismatch user_id=87887
+2026-05-06T14:00:01.034Z [INFO ] api.gateway: handled POST /v1/checkout in 765ms
+2026-05-06T14:00:01.044Z [ERROR] api.checkout: upstream timeout: billing.stripe took >10000ms
+2026-05-06T14:00:01.055Z [INFO ] queue.worker: processed job 20413 in 100ms
+2026-05-06T14:00:01.196Z [ERROR] queue.worker: fetch failed: ECONNREFUSED downstream=metrics.internal:9090
+2026-05-06T14:00:01.405Z [INFO ] cache.redis: evicted 498 keys, memory at 95%
+2026-05-06T14:00:01.415Z [INFO ] api.gateway: handled POST /v1/checkout in 753ms
+2026-05-06T14:00:01.618Z [INFO ] api.gateway: handled GET /v1/users/65624 in 772ms
+2026-05-06T14:00:01.733Z [ERROR] api.search: upstream connection reset: search-cluster-2
+2026-05-06T14:00:01.912Z [ERROR] db.postgres: query timeout after 30000ms query="SELECT * FROM orders WHERE user_id=$1"
+2026-05-06T14:00:02.007Z [INFO ] api.search: indexed 326 documents in 799ms
+2026-05-06T14:00:02.187Z [INFO ] queue.worker: processed job 47477 in 52ms
+2026-05-06T14:00:02.332Z [ERROR] queue.worker: fetch failed: ECONNREFUSED downstream=metrics.internal:9090
+2026-05-06T14:00:02.432Z [INFO ] api.search: indexed 167 documents in 244ms
+2026-05-06T14:00:02.568Z [INFO ] api.gateway: handled POST /v1/checkout in 18ms
+2026-05-06T14:00:02.631Z [INFO ] queue.worker: processed job 21374 in 408ms
+2026-05-06T14:00:02.653Z [INFO ] queue.worker: processed job 53740 in 276ms
+2026-05-06T14:00:02.735Z [WARN ] db.pool: connection pool 76% utilized
+2026-05-06T14:00:02.774Z [INFO ] api.gateway: handled GET /v1/users/29533 in 750ms
+2026-05-06T14:00:02.941Z [INFO ] queue.worker: processed job 56056 in 118ms
+2026-05-06T14:00:03.111Z [ERROR] queue.worker: fetch failed: ECONNREFUSED downstream=metrics.internal:9090
+2026-05-06T14:00:03.220Z [INFO ] api.gateway: handled POST /v1/checkout in 547ms
+2026-05-06T14:00:03.364Z [INFO ] cache.redis: evicted 3 keys, memory at 88%
+2026-05-06T14:00:03.424Z [WARN ] queue.worker: job 31746 retry attempt 331
+2026-05-06T14:00:03.439Z [ERROR] queue.worker: fetch failed: ECONNREFUSED downstream=metrics.internal:9090
+2026-05-06T14:00:03.556Z [INFO ] api.search: indexed 95 documents in 794ms
+-- corrupted line: 30ce85fc evicted {n} keys, me
+2026-05-06T14:00:03.765Z [INFO ] api.gateway: handled POST /v1/checkout in 632ms
+2026-05-06T14:00:03.936Z [WARN ] cache.redis: memory pressure: 71% of max
+-- corrupted line: 2160c670 handled POST /v1/che
+2026-05-06T14:00:04.113Z [INFO ] cache.redis: evicted 91 keys, memory at 71%
+2026-05-06T14:00:04.172Z [INFO ] api.search: indexed 163 documents in 586ms
+2026-05-06T14:00:04.278Z [WARN ] queue.worker: job 35684 retry attempt 7
+2026-05-06T14:00:04.390Z [INFO ] api.gateway: handled POST /v1/checkout in 534ms
+2026-05-06T14:00:04.593Z [WARN ] api.gateway: rate limit approaching for client_id=41681
+2026-05-06T14:00:04.657Z [INFO ] queue.worker: processed job 51177 in 410ms
+2026-05-06T14:00:04.816Z [ERROR] queue.worker: fetch failed: ECONNREFUSED downstream=metrics.internal:9090
+2026-05-06T14:00:04.852Z [WARN ] api.gateway: rate limit approaching for client_id=66488
+2026-05-06T14:00:05.029Z [INFO ] api.gateway: handled GET /v1/feed in 514ms
+2026-05-06T14:00:05.190Z [ERROR] queue.worker: fetch failed: ECONNREFUSED downstream=metrics.internal:9090
+2026-05-06T14:00:05.372Z [INFO ] queue.worker: processed job 21554 in 149ms
+2026-05-06T14:00:05.532Z [INFO ] cache.redis: evicted 446 keys, memory at 71%
+2026-05-06T14:00:05.678Z [ERROR] deploy.runner: image pull failed: registry.internal/api-checkout:v2.18.7 not found
+-- corrupted line: 30846800 handled GET /v1/feed
+2026-05-06T14:00:05.916Z [INFO ] api.gateway: handled GET /v1/users/15004 in 295ms
+2026-05-06T14:00:06.045Z [INFO ] queue.worker: processed job 73083 in 5ms
+2026-05-06T14:00:06.141Z [INFO ] api.gateway: handled POST /v1/checkout in 744ms
+2026-05-06T14:00:06.287Z [WARN ] queue.worker: job 39770 retry attempt 470
+2026-05-06T14:00:06.384Z [INFO ] api.search: indexed 331 documents in 415ms
+2026-05-06T14:00:06.547Z [ERROR] api.checkout: upstream timeout: billing.stripe took >10000ms
+2026-05-06T14:00:06.646Z [INFO ] cache.redis: evicted 89 keys, memory at 85%
+2026-05-06T14:00:06.773Z [INFO ] api.search: indexed 69 documents in 646ms
+2026-05-06T14:00:06.923Z [INFO ] api.gateway: handled POST /v1/checkout in 226ms
+2026-05-06T14:00:06.941Z [INFO ] api.gateway: handled GET /v1/users/77822 in 391ms
+2026-05-06T14:00:07.044Z [INFO ] cache.redis: evicted 172 keys, memory at 82%
+2026-05-06T14:00:07.222Z [WARN ] queue.worker: job 42552 retry attempt 420
+2026-05-06T14:00:07.242Z [INFO ] api.gateway: handled GET /v1/users/88223 in 289ms
+2026-05-06T14:00:07.427Z [ERROR] api.users: unhandled exception: TypeError: cannot read property 'id' of undefined
+2026-05-06T14:00:07.526Z [INFO ] api.gateway: handled GET /v1/users/85930 in 296ms
+2026-05-06T14:00:07.655Z [INFO ] api.gateway: handled GET /v1/feed in 600ms
+2026-05-06T14:00:07.693Z [ERROR] api.search: upstream connection reset: search-cluster-2
+2026-05-06T14:00:07.712Z [INFO ] api.gateway: handled POST /v1/checkout in 637ms
+2026-05-06T14:00:07.773Z [INFO ] cache.redis: evicted 487 keys, memory at 78%
+2026-05-06T14:00:07.848Z [ERROR] db.postgres: connection refused: host=db-primary-1.internal port=5432
+2026-05-06T14:00:07.899Z [ERROR] deploy.runner: image pull failed: registry.internal/api-checkout:v2.18.7 not found
+2026-05-06T14:00:07.934Z [INFO ] api.gateway: handled GET /v1/feed in 140ms
+2026-05-06T14:00:08.105Z [INFO ] api.gateway: handled GET /v1/feed in 152ms
+-- corrupted line: fff5f45 indexed {n} document
+2026-05-06T14:00:08.444Z [INFO ] api.gateway: handled GET /v1/feed in 757ms
+2026-05-06T14:00:08.561Z [ERROR] queue.worker: fetch failed: ECONNREFUSED downstream=metrics.internal:9090
+2026-05-06T14:00:08.765Z [ERROR] queue.worker: fetch failed: ECONNREFUSED downstream=metrics.internal:9090
+2026-05-06T14:00:08.858Z [INFO ] cache.redis: evicted 445 keys, memory at 75%
+-- corrupted line: 3578f3c9 handled POST /v1/che
+2026-05-06T14:00:09.176Z [INFO ] api.search: indexed 394 documents in 593ms
+2026-05-06T14:00:09.230Z [INFO ] api.gateway: handled GET /v1/users/64799 in 308ms
+2026-05-06T14:00:09.335Z [ERROR] deploy.runner: image pull failed: registry.internal/api-checkout:v2.18.7 not found
+2026-05-06T14:00:09.371Z [INFO ] api.gateway: handled GET /v1/users/38862 in 122ms
+2026-05-06T14:00:09.560Z [INFO ] api.gateway: handled POST /v1/checkout in 463ms
+2026-05-06T14:00:09.723Z [INFO ] queue.worker: processed job 29561 in 446ms
+2026-05-06T14:00:09.923Z [WARN ] db.pool: connection pool 75% utilized
+2026-05-06T14:00:10.038Z [WARN ] api.gateway: rate limit approaching for client_id=76641
+2026-05-06T14:00:10.230Z [ERROR] api.checkout: upstream timeout: billing.stripe took >10000ms
+2026-05-06T14:00:10.270Z [ERROR] billing.stripe: request failed: ETIMEDOUT after 10000ms
+2026-05-06T14:00:10.446Z [INFO ] cache.redis: evicted 190 keys, memory at 83%
+2026-05-06T14:00:10.633Z [INFO ] api.gateway: handled GET /v1/feed in 339ms
+2026-05-06T14:00:10.822Z [INFO ] api.gateway: handled GET /v1/feed in 562ms
+2026-05-06T14:00:10.951Z [INFO ] cache.redis: evicted 3 keys, memory at 86%
+2026-05-06T14:00:11.160Z [ERROR] api.search: upstream connection reset: search-cluster-2
+2026-05-06T14:00:11.251Z [INFO ] api.search: indexed 35 documents in 504ms
+2026-05-06T14:00:11.460Z [INFO ] cache.redis: evicted 123 keys, memory at 72%
+2026-05-06T14:00:11.599Z [ERROR] api.users: unhandled exception: TypeError: cannot read property 'id' of undefined
+2026-05-06T14:00:11.802Z [INFO ] api.gateway: handled GET /v1/users/63660 in 251ms
+2026-05-06T14:00:11.981Z [INFO ] api.search: indexed 111 documents in 706ms
+2026-05-06T14:00:12.046Z [ERROR] queue.worker: fetch failed: ECONNREFUSED downstream=metrics.internal:9090
+2026-05-06T14:00:12.201Z [INFO ] cache.redis: evicted 309 keys, memory at 74%
+2026-05-06T14:00:12.350Z [INFO ] api.gateway: handled GET /v1/feed in 244ms
+2026-05-06T14:00:12.538Z [INFO ] api.search: indexed 254 documents in 674ms
+2026-05-06T14:00:12.588Z [ERROR] api.checkout: upstream timeout: billing.stripe took >10000ms
+2026-05-06T14:00:12.633Z [INFO ] api.search: indexed 469 documents in 573ms
+2026-05-06T14:00:12.832Z [INFO ] api.gateway: handled GET /v1/feed in 64ms
+2026-05-06T14:00:13.016Z [INFO ] api.gateway: handled GET /v1/feed in 494ms
+-- corrupted line: 30481f05 memory pressure: {pc
+2026-05-06T14:00:13.186Z [WARN ] db.pool: connection pool 83% utilized
+2026-05-06T14:00:13.212Z [WARN ] queue.worker: job 18634 retry attempt 443
+2026-05-06T14:00:13.321Z [INFO ] queue.worker: processed job 59851 in 716ms
+2026-05-06T14:00:13.413Z [ERROR] billing.stripe: request failed: ETIMEDOUT after 10000ms
+2026-05-06T14:00:13.619Z [INFO ] api.gateway: handled POST /v1/checkout in 48ms
+2026-05-06T14:00:13.715Z [ERROR] api.checkout: upstream timeout: billing.stripe took >10000ms
+2026-05-06T14:00:13.841Z [ERROR] billing.stripe: request failed: ETIMEDOUT after 10000ms
+-- corrupted line: 13539301 rate limit approachi
+2026-05-06T14:00:14.090Z [INFO ] api.search: indexed 258 documents in 339ms
+2026-05-06T14:00:14.243Z [INFO ] api.gateway: handled POST /v1/checkout in 527ms
+2026-05-06T14:00:14.340Z [INFO ] api.search: indexed 122 documents in 404ms
+-- corrupted line: 3731aa7d feature flag missing
+2026-05-06T14:00:14.553Z [INFO ] api.gateway: handled POST /v1/checkout in 436ms
+2026-05-06T14:00:14.624Z [INFO ] queue.worker: processed job 27252 in 360ms
+2026-05-06T14:00:14.802Z [ERROR] billing.stripe: request failed: ETIMEDOUT after 10000ms
+2026-05-06T14:00:15.001Z [WARN ] api.gateway: rate limit approaching for client_id=93309
+2026-05-06T14:00:15.146Z [ERROR] deploy.runner: rollout aborted: health check failed pod=17546
+2026-05-06T14:00:15.227Z [INFO ] queue.worker: processed job 71815 in 733ms
+2026-05-06T14:00:15.365Z [ERROR] api.search: upstream connection reset: search-cluster-2
+2026-05-06T14:00:15.492Z [INFO ] queue.worker: processed job 27150 in 16ms
+2026-05-06T14:00:15.665Z [INFO ] api.gateway: handled GET /v1/feed in 513ms
+2026-05-06T14:00:15.806Z [INFO ] api.search: indexed 90 documents in 466ms
+2026-05-06T14:00:15.937Z [INFO ] api.gateway: handled GET /v1/users/13911 in 740ms
+2026-05-06T14:00:16.054Z [INFO ] api.gateway: handled POST /v1/checkout in 141ms
+2026-05-06T14:00:16.156Z [INFO ] api.gateway: handled POST /v1/checkout in 88ms
+2026-05-06T14:00:16.289Z [ERROR] api.search: upstream connection reset: search-cluster-2
+2026-05-06T14:00:16.380Z [ERROR] api.users: unhandled exception: TypeError: cannot read property 'id' of undefined
+2026-05-06T14:00:16.551Z [INFO ] api.search: indexed 226 documents in 667ms
+2026-05-06T14:00:16.715Z [INFO ] api.search: indexed 270 documents in 49ms
+2026-05-06T14:00:16.761Z [ERROR] db.pool: exhausted: 100/100 connections in use, 47 waiting
+2026-05-06T14:00:16.879Z [WARN ] cache.redis: memory pressure: 78% of max
+2026-05-06T14:00:16.892Z [WARN ] api.gateway: rate limit approaching for client_id=67919
+2026-05-06T14:00:16.915Z [WARN ] api.gateway: rate limit approaching for client_id=16126
+2026-05-06T14:00:16.934Z [INFO ] queue.worker: processed job 92009 in 46ms
+2026-05-06T14:00:17.089Z [INFO ] cache.redis: evicted 27 keys, memory at 84%
+2026-05-06T14:00:17.122Z [ERROR] api.search: upstream connection reset: search-cluster-2
+2026-05-06T14:00:17.309Z [ERROR] billing.stripe: request failed: ETIMEDOUT after 10000ms
+2026-05-06T14:00:17.364Z [INFO ] api.gateway: handled POST /v1/checkout in 621ms
+2026-05-06T14:00:17.385Z [INFO ] api.search: indexed 191 documents in 115ms
+2026-05-06T14:00:17.522Z [WARN ] db.pool: connection pool 78% utilized
+2026-05-06T14:00:17.555Z [INFO ] api.gateway: handled GET /v1/users/59803 in 567ms
+2026-05-06T14:00:17.654Z [ERROR] billing.stripe: request failed: ETIMEDOUT after 10000ms
+2026-05-06T14:00:17.848Z [INFO ] api.gateway: handled GET /v1/feed in 563ms
+2026-05-06T14:00:17.920Z [ERROR] auth.jwt: token expired: iat=1769724713 exp=1763261101 user_id=41501
+2026-05-06T14:00:17.988Z [ERROR] billing.stripe: request failed: ETIMEDOUT after 10000ms
+2026-05-06T14:00:18.135Z [INFO ] api.search: indexed 342 documents in 739ms
+2026-05-06T14:00:18.322Z [INFO ] api.gateway: handled GET /v1/users/72523 in 283ms
+2026-05-06T14:00:18.501Z [INFO ] api.gateway: handled GET /v1/feed in 709ms
+2026-05-06T14:00:18.655Z [INFO ] cache.redis: evicted 474 keys, memory at 89%
+2026-05-06T14:00:18.744Z [INFO ] api.gateway: handled GET /v1/feed in 379ms
+2026-05-06T14:00:18.949Z [WARN ] api.gateway: rate limit approaching for client_id=96839
+2026-05-06T14:00:19.117Z [INFO ] api.search: indexed 5 documents in 190ms
+2026-05-06T14:00:19.150Z [INFO ] api.gateway: handled POST /v1/checkout in 91ms
+2026-05-06T14:00:19.327Z [INFO ] api.gateway: handled GET /v1/users/31440 in 581ms
+2026-05-06T14:00:19.527Z [ERROR] api.checkout: upstream timeout: billing.stripe took >10000ms
+-- corrupted line: 33b51bd4 evicted {n} keys, me
+2026-05-06T14:00:19.707Z [INFO ] api.gateway: handled GET /v1/feed in 801ms
+2026-05-06T14:00:19.855Z [INFO ] api.gateway: handled POST /v1/checkout in 57ms
+2026-05-06T14:00:20.031Z [INFO ] api.gateway: handled GET /v1/users/49175 in 314ms
+2026-05-06T14:00:20.185Z [INFO ] api.search: indexed 137 documents in 236ms
+2026-05-06T14:00:20.329Z [ERROR] auth.jwt: invalid issuer: expected=mesh.io got=evil.example user_id=45486
+2026-05-06T14:00:20.532Z [ERROR] billing.stripe: request failed: ETIMEDOUT after 10000ms
+2026-05-06T14:00:20.665Z [INFO ] api.gateway: handled GET /v1/feed in 166ms
+2026-05-06T14:00:20.827Z [INFO ] api.gateway: handled POST /v1/checkout in 132ms
+-- corrupted line: c602e7b job {id} retry attem
+2026-05-06T14:00:21.069Z [INFO ] queue.worker: processed job 57319 in 484ms
+2026-05-06T14:00:21.202Z [WARN ] queue.worker: job 26148 retry attempt 51
+2026-05-06T14:00:21.342Z [ERROR] auth.jwt: token verification failed: signature mismatch user_id=11579
+2026-05-06T14:00:21.548Z [ERROR] auth.jwt: invalid issuer: expected=mesh.io got=evil.example user_id=98700
+2026-05-06T14:00:21.637Z [ERROR] queue.worker: fetch failed: ECONNREFUSED downstream=metrics.internal:9090

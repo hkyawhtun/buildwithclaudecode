@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 30 1920 1020" fill="none">
+<rect x="0" y="30" width="1920" height="1020" rx="12" fill="#FFFFFF"/>
+
+<!-- Document outer frame -->
+<rect x="260" y="60" width="1400" height="960" rx="16" fill="none" stroke="#D1D5DB" stroke-width="2"/>
+
+<!-- Document header bar -->
+<rect x="260" y="60" width="1400" height="70" rx="16" fill="#F3F4F6" stroke="#D1D5DB" stroke-width="2"/>
+<rect x="260" y="106" width="1400" height="24" fill="#F3F4F6"/>
+<text x="960" y="105" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="32" font-weight="700" fill="#374151">SKILL.md</text>
+
+<!-- Top Section: YAML Frontmatter (GREEN) -->
+<rect x="300" y="160" width="1320" height="380" rx="12" fill="#D6F5E8" stroke="#00BD78" stroke-width="2"/>
+<text x="360" y="220" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="32" font-weight="700" fill="#374151">YAML Frontmatter</text>
+<text x="360" y="290" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="26" fill="#374151"><tspan font-weight="700">name:</tspan> review</text>
+<text x="360" y="335" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="26" fill="#374151"><tspan font-weight="700">description:</tspan> Thorough code review</text>
+<text x="360" y="380" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="26" fill="#374151"><tspan font-weight="700">allowed-tools:</tspan> Read, Bash, Grep</text>
+<text x="360" y="425" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="26" fill="#374151"><tspan font-weight="700">model:</tspan> sonnet</text>
+<text x="360" y="500" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" fill="#6B7280">Configuration -- how the skill is wired</text>
+
+<!-- Divider -->
+<line x1="300" y1="560" x2="1620" y2="560" stroke="#D1D5DB" stroke-width="2" stroke-dasharray="8 4"/>
+
+<!-- Bottom Section: Markdown Body (AMBER) -->
+<rect x="300" y="580" width="1320" height="400" rx="12" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
+<text x="360" y="640" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="32" font-weight="700" fill="#374151">Markdown Body</text>
+
+<text x="360" y="720" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#374151">Instructions</text>
+<text x="360" y="760" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" fill="#6B7280">What Claude should do, in plain language</text>
+
+<text x="360" y="840" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#374151">Steps + Validation Criteria</text>
+<text x="360" y="880" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" fill="#6B7280">Ordered workflow and how Claude knows it's done</text>
+
+<text x="360" y="950" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" fill="#6B7280">The body IS the skill -- what Claude actually does</text>
+
+</svg>

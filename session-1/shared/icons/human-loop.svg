@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- Green accent: circular arrow arc -->
+  <path d="M44 20C48.42 24.42 50 30 48.5 36C47 42 42 46 36 48" stroke="#5DCEA5" stroke-width="6" stroke-linecap="round"/>
+  <!-- Person head -->
+  <circle cx="32" cy="20" r="7" stroke="#000000" stroke-width="4"/>
+  <!-- Person body -->
+  <path d="M22 44C22 37.37 27.37 32 34 32H30C36.63 32 42 37.37 42 44" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Circular arrows -->
+  <path d="M18 44C14 38 14 30 18 24" stroke="#000000" stroke-width="4" stroke-linecap="round"/>
+  <path d="M18 24L22 20" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M18 24L14 20" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M46 20C50 26 50 34 46 40" stroke="#000000" stroke-width="4" stroke-linecap="round"/>
+  <path d="M46 40L50 44" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M46 40L42 44" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

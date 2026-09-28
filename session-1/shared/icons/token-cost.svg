@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- Green accent: fill behind left side of the coin stack -->
+  <path d="M12 20C12 16.69 17.37 14 24 14C26 14 27.9 14.3 29.5 14.8C22.8 16.4 18 19.6 18 23V37C18 39.2 14 40.5 12 38V20Z" fill="#5DCEA5"/>
+  <!-- Top ellipse -->
+  <ellipse cx="24" cy="20" rx="12" ry="6" stroke="#000000" stroke-width="4"/>
+  <!-- Cylinder body -->
+  <path d="M12 20V40C12 43.31 17.37 46 24 46C30.63 46 36 43.31 36 40V20" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Middle ring -->
+  <path d="M12 30C12 33.31 17.37 36 24 36C30.63 36 36 33.31 36 30" stroke="#000000" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- Green accent: mass behind the right side of the bubble -->
+  <path d="M30 16H36C39.31 16 42 18.69 42 22V30C42 33.31 39.31 36 36 36H30V16Z" fill="#5DCEA5"/>
+  <!-- Chat bubble -->
+  <path d="M14 22C14 18.69 16.69 16 20 16H36C39.31 16 42 18.69 42 22V30C42 33.31 39.31 36 36 36H26L18 44V36H16C14.9 36 14 35.1 14 34V22Z" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Dot indicators inside -->
+  <circle cx="22" cy="26" r="2.5" fill="#000000"/>
+  <circle cx="28" cy="26" r="2.5" fill="#000000"/>
+  <circle cx="34" cy="26" r="2.5" fill="#000000"/>
+</svg>

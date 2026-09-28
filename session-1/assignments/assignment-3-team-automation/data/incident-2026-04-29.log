@@ -1,0 +1,240 @@
+2026-04-29T14:00:00.013Z [INFO ] api.gateway: handled GET /v1/feed in 261ms
+2026-04-29T14:00:00.057Z [INFO ] api.gateway: handled GET /v1/users/28738 in 659ms
+2026-04-29T14:00:00.126Z [ERROR] api.users: unhandled exception: TypeError: cannot read property 'id' of undefined
+2026-04-29T14:00:00.217Z [WARN ] db.pool: connection pool 99% utilized
+2026-04-29T14:00:00.232Z [INFO ] api.gateway: handled POST /v1/checkout in 408ms
+2026-04-29T14:00:00.269Z [INFO ] cache.redis: evicted 345 keys, memory at 84%
+2026-04-29T14:00:00.319Z [INFO ] queue.worker: processed job 97734 in 373ms
+2026-04-29T14:00:00.500Z [INFO ] api.gateway: handled GET /v1/users/81298 in 536ms
+2026-04-29T14:00:00.644Z [INFO ] api.gateway: handled GET /v1/feed in 776ms
+2026-04-29T14:00:00.713Z [INFO ] cache.redis: evicted 77 keys, memory at 82%
+2026-04-29T14:00:00.725Z [WARN ] queue.worker: job 11607 retry attempt 292
+2026-04-29T14:00:00.765Z [ERROR] deploy.runner: image pull failed: registry.internal/api-checkout:v2.18.7 not found
+2026-04-29T14:00:00.910Z [WARN ] api.gateway: rate limit approaching for client_id=48804
+-- corrupted line: 206407f3 rollout aborted: hea
+2026-04-29T14:00:01.103Z [INFO ] cache.redis: evicted 59 keys, memory at 92%
+2026-04-29T14:00:01.199Z [INFO ] api.gateway: handled POST /v1/checkout in 192ms
+2026-04-29T14:00:01.389Z [INFO ] cache.redis: evicted 433 keys, memory at 83%
+2026-04-29T14:00:01.481Z [INFO ] api.gateway: handled GET /v1/users/78283 in 83ms
+2026-04-29T14:00:01.591Z [INFO ] api.gateway: handled POST /v1/checkout in 108ms
+2026-04-29T14:00:01.606Z [INFO ] cache.redis: evicted 326 keys, memory at 97%
+2026-04-29T14:00:01.724Z [INFO ] cache.redis: evicted 185 keys, memory at 78%
+2026-04-29T14:00:01.855Z [WARN ] queue.worker: job 16407 retry attempt 384
+2026-04-29T14:00:01.970Z [INFO ] queue.worker: processed job 21998 in 468ms
+2026-04-29T14:00:02.120Z [INFO ] queue.worker: processed job 90006 in 40ms
+2026-04-29T14:00:02.281Z [INFO ] api.search: indexed 190 documents in 361ms
+2026-04-29T14:00:02.440Z [WARN ] queue.worker: job 13889 retry attempt 172
+2026-04-29T14:00:02.520Z [INFO ] queue.worker: processed job 17771 in 210ms
+2026-04-29T14:00:02.591Z [INFO ] api.search: indexed 94 documents in 115ms
+2026-04-29T14:00:02.684Z [WARN ] api.gateway: rate limit approaching for client_id=44080
+2026-04-29T14:00:02.780Z [ERROR] billing.stripe: request failed: ETIMEDOUT after 10000ms
+2026-04-29T14:00:02.884Z [INFO ] api.search: indexed 417 documents in 236ms
+2026-04-29T14:00:02.983Z [INFO ] api.gateway: handled GET /v1/feed in 438ms
+2026-04-29T14:00:03.080Z [INFO ] api.gateway: handled POST /v1/checkout in 750ms
+2026-04-29T14:00:03.222Z [INFO ] api.search: indexed 418 documents in 309ms
+2026-04-29T14:00:03.242Z [INFO ] queue.worker: processed job 61094 in 472ms
+2026-04-29T14:00:03.384Z [INFO ] api.gateway: handled POST /v1/checkout in 218ms
+2026-04-29T14:00:03.590Z [ERROR] api.feed: feature flag missing: experiment=new-feed-ranker
+2026-04-29T14:00:03.643Z [INFO ] cache.redis: evicted 320 keys, memory at 75%
+2026-04-29T14:00:03.654Z [INFO ] api.gateway: handled GET /v1/feed in 27ms
+2026-04-29T14:00:03.710Z [WARN ] api.gateway: rate limit approaching for client_id=78869
+2026-04-29T14:00:03.910Z [ERROR] deploy.runner: container crashed: exit_code=139 image=api-gateway:v3.41.2
+2026-04-29T14:00:04.099Z [INFO ] api.search: indexed 366 documents in 766ms
+2026-04-29T14:00:04.209Z [INFO ] api.gateway: handled POST /v1/checkout in 38ms
+2026-04-29T14:00:04.353Z [INFO ] api.gateway: handled GET /v1/users/17192 in 532ms
+2026-04-29T14:00:04.385Z [INFO ] cache.redis: evicted 103 keys, memory at 84%
+-- corrupted line: 1c2e5f5a handled GET /v1/user
+2026-04-29T14:00:04.633Z [INFO ] api.gateway: handled GET /v1/feed in 689ms
+2026-04-29T14:00:04.703Z [INFO ] api.gateway: handled GET /v1/feed in 207ms
+2026-04-29T14:00:04.880Z [INFO ] api.gateway: handled GET /v1/users/84808 in 141ms
+2026-04-29T14:00:04.902Z [ERROR] api.feed: feature flag missing: experiment=new-feed-ranker
+2026-04-29T14:00:05.020Z [INFO ] api.gateway: handled GET /v1/users/32630 in 728ms
+2026-04-29T14:00:05.043Z [ERROR] auth.jwt: token verification failed: signature mismatch user_id=50001
+2026-04-29T14:00:05.054Z [WARN ] db.pool: connection pool 85% utilized
+2026-04-29T14:00:05.224Z [WARN ] db.pool: connection pool 91% utilized
+2026-04-29T14:00:05.356Z [INFO ] cache.redis: evicted 118 keys, memory at 71%
+2026-04-29T14:00:05.524Z [INFO ] api.gateway: handled POST /v1/checkout in 558ms
+2026-04-29T14:00:05.622Z [ERROR] auth.jwt: token verification failed: signature mismatch user_id=86551
+2026-04-29T14:00:05.736Z [INFO ] api.gateway: handled POST /v1/checkout in 44ms
+2026-04-29T14:00:05.753Z [ERROR] deploy.runner: image pull failed: registry.internal/api-checkout:v2.18.7 not found
+-- corrupted line: 358271f1 indexed {n} document
+2026-04-29T14:00:06.027Z [INFO ] api.gateway: handled GET /v1/feed in 781ms
+2026-04-29T14:00:06.094Z [INFO ] api.gateway: handled GET /v1/feed in 557ms
+2026-04-29T14:00:06.244Z [INFO ] queue.worker: processed job 50627 in 148ms
+2026-04-29T14:00:06.432Z [ERROR] api.feed: feature flag missing: experiment=new-feed-ranker
+2026-04-29T14:00:06.503Z [ERROR] deploy.runner: container crashed: exit_code=139 image=api-gateway:v3.41.2
+2026-04-29T14:00:06.690Z [INFO ] api.gateway: handled GET /v1/users/10044 in 212ms
+2026-04-29T14:00:06.777Z [INFO ] queue.worker: processed job 44909 in 369ms
+2026-04-29T14:00:06.828Z [WARN ] api.gateway: rate limit approaching for client_id=72766
+2026-04-29T14:00:06.909Z [ERROR] deploy.runner: image pull failed: registry.internal/api-checkout:v2.18.7 not found
+2026-04-29T14:00:07.011Z [ERROR] db.pool: exhausted: 100/100 connections in use, 47 waiting
+2026-04-29T14:00:07.114Z [WARN ] api.gateway: rate limit approaching for client_id=16845
+2026-04-29T14:00:07.180Z [ERROR] billing.stripe: request failed: ETIMEDOUT after 10000ms
+2026-04-29T14:00:07.311Z [INFO ] api.gateway: handled POST /v1/checkout in 658ms
+2026-04-29T14:00:07.487Z [ERROR] deploy.runner: image pull failed: registry.internal/api-checkout:v2.18.7 not found
+2026-04-29T14:00:07.547Z [INFO ] api.gateway: handled GET /v1/feed in 540ms
+2026-04-29T14:00:07.713Z [ERROR] db.postgres: connection refused: host=db-primary-1.internal port=5432
+2026-04-29T14:00:07.856Z [ERROR] api.users: unhandled exception: TypeError: cannot read property 'id' of undefined
+2026-04-29T14:00:07.900Z [INFO ] api.gateway: handled GET /v1/users/72541 in 370ms
+2026-04-29T14:00:07.956Z [ERROR] deploy.runner: image pull failed: registry.internal/api-checkout:v2.18.7 not found
+2026-04-29T14:00:08.101Z [INFO ] api.gateway: handled POST /v1/checkout in 647ms
+2026-04-29T14:00:08.181Z [ERROR] deploy.runner: rollout aborted: health check failed pod=25666
+2026-04-29T14:00:08.321Z [ERROR] deploy.runner: rollout aborted: health check failed pod=16463
+2026-04-29T14:00:08.345Z [INFO ] cache.redis: evicted 497 keys, memory at 96%
+2026-04-29T14:00:08.545Z [INFO ] api.gateway: handled POST /v1/checkout in 200ms
+-- corrupted line: 1d2bb0e1 container crashed: e
+2026-04-29T14:00:08.660Z [INFO ] api.search: indexed 78 documents in 756ms
+2026-04-29T14:00:08.685Z [INFO ] api.gateway: handled POST /v1/checkout in 87ms
+2026-04-29T14:00:08.731Z [ERROR] api.search: upstream connection reset: search-cluster-2
+2026-04-29T14:00:08.789Z [INFO ] cache.redis: evicted 171 keys, memory at 80%
+2026-04-29T14:00:08.894Z [INFO ] cache.redis: evicted 243 keys, memory at 97%
+2026-04-29T14:00:09.090Z [WARN ] cache.redis: memory pressure: 90% of max
+-- corrupted line: 32772c28 job {id} retry attem
+2026-04-29T14:00:09.439Z [ERROR] deploy.runner: image pull failed: registry.internal/api-checkout:v2.18.7 not found
+2026-04-29T14:00:09.518Z [INFO ] cache.redis: evicted 491 keys, memory at 72%
+2026-04-29T14:00:09.727Z [ERROR] billing.stripe: request failed: ETIMEDOUT after 10000ms
+2026-04-29T14:00:09.753Z [WARN ] queue.worker: job 35297 retry attempt 208
+2026-04-29T14:00:09.804Z [ERROR] deploy.runner: rollout aborted: health check failed pod=44783
+2026-04-29T14:00:09.936Z [ERROR] api.users: unhandled exception: TypeError: cannot read property 'id' of undefined
+2026-04-29T14:00:09.952Z [INFO ] queue.worker: processed job 85546 in 11ms
+2026-04-29T14:00:10.140Z [INFO ] cache.redis: evicted 110 keys, memory at 79%
+2026-04-29T14:00:10.228Z [WARN ] cache.redis: memory pressure: 81% of max
+2026-04-29T14:00:10.329Z [ERROR] deploy.runner: image pull failed: registry.internal/api-checkout:v2.18.7 not found
+2026-04-29T14:00:10.352Z [INFO ] api.search: indexed 49 documents in 225ms
+2026-04-29T14:00:10.459Z [INFO ] cache.redis: evicted 347 keys, memory at 86%
+2026-04-29T14:00:10.471Z [INFO ] api.gateway: handled POST /v1/checkout in 669ms
+2026-04-29T14:00:10.672Z [WARN ] api.gateway: rate limit approaching for client_id=53056
+2026-04-29T14:00:10.789Z [WARN ] api.gateway: rate limit approaching for client_id=21995
+2026-04-29T14:00:10.813Z [INFO ] queue.worker: processed job 59196 in 339ms
+2026-04-29T14:00:10.850Z [INFO ] cache.redis: evicted 351 keys, memory at 84%
+2026-04-29T14:00:10.924Z [ERROR] deploy.runner: image pull failed: registry.internal/api-checkout:v2.18.7 not found
+2026-04-29T14:00:11.100Z [INFO ] api.search: indexed 300 documents in 60ms
+2026-04-29T14:00:11.174Z [INFO ] api.gateway: handled GET /v1/users/21967 in 707ms
+2026-04-29T14:00:11.351Z [INFO ] queue.worker: processed job 69291 in 643ms
+2026-04-29T14:00:11.413Z [INFO ] cache.redis: evicted 58 keys, memory at 79%
+2026-04-29T14:00:11.430Z [INFO ] api.gateway: handled GET /v1/feed in 59ms
+2026-04-29T14:00:11.585Z [ERROR] deploy.runner: image pull failed: registry.internal/api-checkout:v2.18.7 not found
+2026-04-29T14:00:11.600Z [INFO ] cache.redis: evicted 70 keys, memory at 80%
+2026-04-29T14:00:11.689Z [INFO ] api.gateway: handled POST /v1/checkout in 311ms
+2026-04-29T14:00:11.712Z [INFO ] api.gateway: handled POST /v1/checkout in 308ms
+2026-04-29T14:00:11.833Z [INFO ] api.gateway: handled GET /v1/feed in 319ms
+2026-04-29T14:00:12.042Z [INFO ] api.gateway: handled GET /v1/feed in 182ms
+2026-04-29T14:00:12.099Z [INFO ] queue.worker: processed job 17722 in 465ms
+2026-04-29T14:00:12.117Z [INFO ] queue.worker: processed job 41674 in 511ms
+2026-04-29T14:00:12.146Z [WARN ] api.gateway: rate limit approaching for client_id=98562
+2026-04-29T14:00:12.259Z [INFO ] queue.worker: processed job 30043 in 571ms
+2026-04-29T14:00:12.285Z [INFO ] api.search: indexed 69 documents in 40ms
+2026-04-29T14:00:12.377Z [WARN ] cache.redis: memory pressure: 71% of max
+2026-04-29T14:00:12.508Z [ERROR] auth.jwt: token verification failed: signature mismatch user_id=21973
+2026-04-29T14:00:12.710Z [INFO ] cache.redis: evicted 32 keys, memory at 76%
+2026-04-29T14:00:12.840Z [INFO ] api.gateway: handled GET /v1/users/98200 in 530ms
+2026-04-29T14:00:13.042Z [INFO ] cache.redis: evicted 335 keys, memory at 97%
+-- corrupted line: 332c7f19 container crashed: e
+2026-04-29T14:00:13.382Z [ERROR] deploy.runner: rollout aborted: health check failed pod=29625
+2026-04-29T14:00:13.578Z [WARN ] queue.worker: job 12353 retry attempt 356
+2026-04-29T14:00:13.679Z [ERROR] queue.worker: fetch failed: ECONNREFUSED downstream=metrics.internal:9090
+2026-04-29T14:00:13.756Z [INFO ] api.gateway: handled GET /v1/feed in 658ms
+2026-04-29T14:00:13.892Z [ERROR] deploy.runner: image pull failed: registry.internal/api-checkout:v2.18.7 not found
+2026-04-29T14:00:13.964Z [INFO ] api.search: indexed 426 documents in 647ms
+2026-04-29T14:00:14.163Z [ERROR] deploy.runner: rollout aborted: health check failed pod=21519
+2026-04-29T14:00:14.197Z [INFO ] api.gateway: handled POST /v1/checkout in 119ms
+2026-04-29T14:00:14.297Z [INFO ] api.gateway: handled GET /v1/users/72690 in 663ms
+2026-04-29T14:00:14.323Z [ERROR] deploy.runner: container crashed: exit_code=139 image=api-gateway:v3.41.2
+2026-04-29T14:00:14.393Z [ERROR] deploy.runner: rollout aborted: health check failed pod=41607
+2026-04-29T14:00:14.526Z [INFO ] api.gateway: handled GET /v1/feed in 48ms
+2026-04-29T14:00:14.681Z [INFO ] cache.redis: evicted 288 keys, memory at 71%
+2026-04-29T14:00:14.829Z [WARN ] cache.redis: memory pressure: 98% of max
+2026-04-29T14:00:15.023Z [INFO ] cache.redis: evicted 139 keys, memory at 90%
+2026-04-29T14:00:15.224Z [INFO ] api.gateway: handled GET /v1/users/73628 in 220ms
+2026-04-29T14:00:15.290Z [WARN ] db.pool: connection pool 82% utilized
+2026-04-29T14:00:15.397Z [INFO ] api.gateway: handled POST /v1/checkout in 695ms
+2026-04-29T14:00:15.591Z [WARN ] db.pool: connection pool 91% utilized
+2026-04-29T14:00:15.722Z [INFO ] api.gateway: handled POST /v1/checkout in 456ms
+-- corrupted line: 19283603 job {id} retry attem
+-- corrupted line: 2c66dc2c handled GET /v1/feed
+2026-04-29T14:00:16.100Z [ERROR] api.checkout: upstream timeout: billing.stripe took >10000ms
+-- corrupted line: 24dd7ab8 handled GET /v1/feed
+2026-04-29T14:00:16.276Z [ERROR] billing.stripe: request failed: ETIMEDOUT after 10000ms
+2026-04-29T14:00:16.347Z [INFO ] api.gateway: handled GET /v1/users/70963 in 724ms
+2026-04-29T14:00:16.471Z [INFO ] api.gateway: handled GET /v1/users/95629 in 353ms
+2026-04-29T14:00:16.663Z [INFO ] api.gateway: handled POST /v1/checkout in 144ms
+2026-04-29T14:00:16.693Z [INFO ] api.gateway: handled GET /v1/users/70163 in 652ms
+2026-04-29T14:00:16.753Z [INFO ] api.gateway: handled GET /v1/feed in 714ms
+2026-04-29T14:00:16.792Z [ERROR] deploy.runner: image pull failed: registry.internal/api-checkout:v2.18.7 not found
+2026-04-29T14:00:16.891Z [INFO ] api.gateway: handled GET /v1/feed in 223ms
+2026-04-29T14:00:16.950Z [ERROR] api.users: unhandled exception: TypeError: cannot read property 'id' of undefined
+2026-04-29T14:00:17.124Z [INFO ] api.gateway: handled GET /v1/users/95548 in 193ms
+2026-04-29T14:00:17.282Z [ERROR] queue.worker: fetch failed: ECONNREFUSED downstream=metrics.internal:9090
+2026-04-29T14:00:17.383Z [INFO ] api.search: indexed 384 documents in 248ms
+2026-04-29T14:00:17.486Z [WARN ] db.pool: connection pool 84% utilized
+2026-04-29T14:00:17.666Z [ERROR] queue.worker: fetch failed: ECONNREFUSED downstream=metrics.internal:9090
+2026-04-29T14:00:17.723Z [INFO ] cache.redis: evicted 149 keys, memory at 87%
+2026-04-29T14:00:17.804Z [INFO ] queue.worker: processed job 78173 in 383ms
+2026-04-29T14:00:18.004Z [INFO ] api.gateway: handled POST /v1/checkout in 100ms
+2026-04-29T14:00:18.162Z [WARN ] cache.redis: memory pressure: 98% of max
+2026-04-29T14:00:18.218Z [ERROR] deploy.runner: rollout aborted: health check failed pod=43897
+2026-04-29T14:00:18.259Z [WARN ] db.pool: connection pool 90% utilized
+2026-04-29T14:00:18.385Z [ERROR] deploy.runner: image pull failed: registry.internal/api-checkout:v2.18.7 not found
+2026-04-29T14:00:18.452Z [INFO ] api.gateway: handled GET /v1/users/35429 in 563ms
+2026-04-29T14:00:18.634Z [INFO ] api.gateway: handled POST /v1/checkout in 494ms
+2026-04-29T14:00:18.729Z [INFO ] api.gateway: handled GET /v1/feed in 192ms
+2026-04-29T14:00:18.863Z [INFO ] api.gateway: handled GET /v1/feed in 785ms
+2026-04-29T14:00:18.942Z [INFO ] cache.redis: evicted 424 keys, memory at 75%
+2026-04-29T14:00:19.150Z [ERROR] deploy.runner: rollout aborted: health check failed pod=36503
+2026-04-29T14:00:19.250Z [ERROR] db.postgres: deadlock detected on table=orders txn=15777
+2026-04-29T14:00:19.425Z [INFO ] api.gateway: handled POST /v1/checkout in 393ms
+2026-04-29T14:00:19.518Z [INFO ] api.gateway: handled GET /v1/feed in 795ms
+-- corrupted line: 1c62125f indexed {n} document
+2026-04-29T14:00:19.616Z [INFO ] queue.worker: processed job 72499 in 584ms
+2026-04-29T14:00:19.697Z [ERROR] deploy.runner: image pull failed: registry.internal/api-checkout:v2.18.7 not found
+2026-04-29T14:00:19.867Z [INFO ] api.search: indexed 223 documents in 644ms
+2026-04-29T14:00:19.900Z [INFO ] cache.redis: evicted 97 keys, memory at 91%
+2026-04-29T14:00:19.910Z [INFO ] cache.redis: evicted 176 keys, memory at 82%
+2026-04-29T14:00:19.965Z [ERROR] deploy.runner: rollout aborted: health check failed pod=75570
+2026-04-29T14:00:20.174Z [INFO ] api.gateway: handled GET /v1/users/26461 in 386ms
+2026-04-29T14:00:20.192Z [ERROR] deploy.runner: rollout aborted: health check failed pod=67248
+2026-04-29T14:00:20.359Z [ERROR] deploy.runner: image pull failed: registry.internal/api-checkout:v2.18.7 not found
+2026-04-29T14:00:20.396Z [ERROR] deploy.runner: rollout aborted: health check failed pod=33629
+2026-04-29T14:00:20.557Z [WARN ] cache.redis: memory pressure: 87% of max
+2026-04-29T14:00:20.572Z [WARN ] cache.redis: memory pressure: 93% of max
+2026-04-29T14:00:20.598Z [INFO ] api.gateway: handled POST /v1/checkout in 657ms
+2026-04-29T14:00:20.656Z [INFO ] api.search: indexed 35 documents in 784ms
+2026-04-29T14:00:20.783Z [ERROR] deploy.runner: rollout aborted: health check failed pod=10084
+2026-04-29T14:00:20.966Z [INFO ] api.gateway: handled GET /v1/feed in 304ms
+2026-04-29T14:00:21.005Z [INFO ] cache.redis: evicted 475 keys, memory at 78%
+2026-04-29T14:00:21.204Z [WARN ] queue.worker: job 30659 retry attempt 294
+2026-04-29T14:00:21.407Z [WARN ] api.gateway: rate limit approaching for client_id=40595
+2026-04-29T14:00:21.509Z [ERROR] deploy.runner: rollout aborted: health check failed pod=59559
+2026-04-29T14:00:21.709Z [INFO ] api.gateway: handled GET /v1/users/82668 in 716ms
+2026-04-29T14:00:21.800Z [ERROR] db.postgres: query timeout after 30000ms query="SELECT * FROM orders WHERE user_id=$1"
+2026-04-29T14:00:21.916Z [ERROR] deploy.runner: image pull failed: registry.internal/api-checkout:v2.18.7 not found
+2026-04-29T14:00:22.023Z [INFO ] api.search: indexed 375 documents in 78ms
+2026-04-29T14:00:22.048Z [WARN ] db.pool: connection pool 82% utilized
+2026-04-29T14:00:22.190Z [INFO ] api.gateway: handled POST /v1/checkout in 164ms
+2026-04-29T14:00:22.216Z [WARN ] queue.worker: job 12708 retry attempt 167
+2026-04-29T14:00:22.398Z [INFO ] cache.redis: evicted 383 keys, memory at 91%
+-- corrupted line: 52b3dd0 fetch failed: ECONNR
+2026-04-29T14:00:22.616Z [INFO ] api.search: indexed 492 documents in 488ms
+2026-04-29T14:00:22.781Z [INFO ] api.search: indexed 119 documents in 634ms
+2026-04-29T14:00:22.924Z [INFO ] api.gateway: handled GET /v1/users/77228 in 291ms
+2026-04-29T14:00:23.046Z [INFO ] api.gateway: handled GET /v1/users/76874 in 115ms
+2026-04-29T14:00:23.135Z [INFO ] api.gateway: handled GET /v1/users/38911 in 557ms
+2026-04-29T14:00:23.154Z [INFO ] queue.worker: processed job 61211 in 72ms
+2026-04-29T14:00:23.248Z [ERROR] auth.jwt: token expired: iat=1746244551 exp=1732183250 user_id=46271
+2026-04-29T14:00:23.265Z [WARN ] queue.worker: job 98770 retry attempt 286
+2026-04-29T14:00:23.362Z [INFO ] api.gateway: handled GET /v1/feed in 622ms
+2026-04-29T14:00:23.468Z [INFO ] api.gateway: handled GET /v1/users/99291 in 227ms
+2026-04-29T14:00:23.625Z [WARN ] db.pool: connection pool 84% utilized
+2026-04-29T14:00:23.664Z [ERROR] db.pool: exhausted: 100/100 connections in use, 47 waiting
+2026-04-29T14:00:23.857Z [ERROR] deploy.runner: rollout aborted: health check failed pod=77210
+2026-04-29T14:00:23.908Z [WARN ] cache.redis: memory pressure: 89% of max
+2026-04-29T14:00:24.100Z [ERROR] deploy.runner: container crashed: exit_code=139 image=api-gateway:v3.41.2
+2026-04-29T14:00:24.232Z [ERROR] auth.jwt: token expired: iat=1780768292 exp=1772686257 user_id=96887
+2026-04-29T14:00:24.317Z [WARN ] api.gateway: rate limit approaching for client_id=92523
+2026-04-29T14:00:24.506Z [INFO ] queue.worker: processed job 92877 in 795ms
+2026-04-29T14:00:24.709Z [INFO ] api.gateway: handled GET /v1/feed in 530ms
+2026-04-29T14:00:24.754Z [INFO ] api.gateway: handled POST /v1/checkout in 600ms
+2026-04-29T14:00:24.851Z [INFO ] cache.redis: evicted 309 keys, memory at 75%
+2026-04-29T14:00:25.005Z [INFO ] api.gateway: handled GET /v1/users/24624 in 804ms
+2026-04-29T14:00:25.021Z [ERROR] queue.worker: fetch failed: ECONNREFUSED downstream=metrics.internal:9090
+2026-04-29T14:00:25.166Z [INFO ] api.gateway: handled GET /v1/users/41185 in 683ms

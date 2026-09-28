@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ByteByteGo Icon Review</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #ffffff;
+      color: #111111;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 32px;
+      background: #ffffff;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      line-height: 1.1;
+    }
+
+    p {
+      margin: 0 0 28px;
+      color: #555555;
+      font-size: 15px;
+    }
+
+    .summary {
+      margin-bottom: 24px;
+      color: #6b7280;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section-title {
+      margin: 0 0 14px;
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #0f172a;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      border: 1px solid #e8e8e8;
+      border-radius: 18px;
+      padding: 18px;
+      background: #ffffff;
+    }
+
+    .frame {
+      display: grid;
+      place-items: center;
+      min-height: 140px;
+      border-radius: 14px;
+      background:
+        linear-gradient(#fafafa, #fafafa),
+        linear-gradient(90deg, #f1f1f1 1px, transparent 1px),
+        linear-gradient(#f1f1f1 1px, transparent 1px);
+      background-size: auto, 20px 20px, 20px 20px;
+      background-position: 0 0, 0 0, 0 0;
+    }
+
+    img {
+      width: 84px;
+      height: 84px;
+      display: block;
+    }
+
+    .name-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 14px;
+    }
+
+    .name {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .reject-btn {
+      width: 28px;
+      height: 28px;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      background: #fff;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      transition: all 0.15s;
+      flex-shrink: 0;
+    }
+
+    .reject-btn:hover {
+      border-color: #ef4444;
+      background: #fef2f2;
+    }
+
+    .reject-btn.active {
+      border-color: #ef4444;
+      background: #ef4444;
+    }
+
+    .reject-btn svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    .reject-btn path {
+      stroke: #ccc;
+      transition: stroke 0.15s;
+    }
+
+    .reject-btn:hover path {
+      stroke: #ef4444;
+    }
+
+    .reject-btn.active path {
+      stroke: #fff;
+    }
+
+    .card.rejected {
+      opacity: 0.4;
+    }
+
+    .feedback {
+      margin-top: 10px;
+    }
+
+    .feedback textarea {
+      width: 100%;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 8px 10px;
+      font-family: inherit;
+      font-size: 12px;
+      resize: vertical;
+      min-height: 36px;
+      max-height: 120px;
+      background: #fafafa;
+      color: #333;
+      transition: border-color 0.15s, background 0.15s;
+    }
+
+    .feedback textarea:focus {
+      outline: none;
+      border-color: #5DCEA5;
+      background: #fff;
+    }
+
+    .feedback textarea.has-content {
+      border-color: #5DCEA5;
+      background: #f0fdf8;
+    }
+
+    .toolbar {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+    }
+
+    .toolbar button {
+      padding: 8px 18px;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      background: #fff;
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .toolbar button:hover {
+      background: #f0fdf8;
+      border-color: #5DCEA5;
+    }
+
+    .toolbar button.primary {
+      background: #000;
+      color: #fff;
+      border-color: #000;
+    }
+
+    .toolbar button.primary:hover {
+      background: #222;
+    }
+
+    .toolbar .count {
+      font-size: 13px;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <h1>ByteByteGo Icon Review</h1>
+  <p>Transparent SVGs on white with a subtle grid to check stroke weight, negative space, and accent balance.</p>
+  <div class="summary" id="summary"></div>
+
+  <div class="toolbar">
+    <button class="primary" onclick="copyFeedback()">Copy Feedback</button>
+    <button class="primary" onclick="copyRejected()">Copy Rejected</button>
+    <button onclick="clearAll()">Clear All</button>
+    <span class="count" id="feedback-count"></span>
+  </div>
+
+  <div id="sections"></div>
+
+  <script>
+    const sections = [
+      {
+        title: 'Core',
+        icons: [
+          'brain.svg',
+          'document.svg',
+          'layers.svg',
+          'plug.svg',
+          'shield.svg',
+          'split.svg',
+          'team.svg',
+          'terminal.svg',
+        ],
+      },
+      {
+        title: 'Capabilities',
+        icons: [
+          'search.svg',
+          'edit.svg',
+          'bug-question.svg',
+          'debug.svg',
+          'simplify.svg',
+          'browser.svg',
+          'camera.svg',
+          'film.svg',
+          'test.svg',
+        ],
+      },
+      {
+        title: 'Workflow',
+        icons: [
+          'orchestrate.svg',
+          'token-cost.svg',
+          'truncate-limit.svg',
+          'signal-noise.svg',
+          'rule-thumb.svg',
+          'skill-sprawl.svg',
+          'prune.svg',
+        ],
+      },
+      {
+        title: 'Platform',
+        icons: [
+          'dashboard.svg',
+          'coach.svg',
+          'chat.svg',
+          'analytics.svg',
+          'local-machine.svg',
+          'project-repo.svg',
+          'global-user.svg',
+          'chat-app.svg',
+          'rocket.svg',
+          'billing-saas.svg',
+        ],
+      },
+      {
+        title: 'Assignment',
+        icons: [
+          'roast.svg',
+          'architecture.svg',
+          'guide.svg',
+          'test-gap.svg',
+          'spark.svg',
+          'assistant-hand.svg',
+        ],
+      },
+    ];
+
+    const versionToken = new URLSearchParams(window.location.search).get('v') || Date.now();
+    const summary = document.getElementById('summary');
+    const container = document.getElementById('sections');
+    const totalIcons = sections.reduce((sum, section) => sum + section.icons.length, 0);
+
+    summary.textContent = `${totalIcons} icons across ${sections.length} families.`;
+
+    for (const section of sections) {
+      const sectionEl = document.createElement('section');
+      sectionEl.className = 'section';
+
+      const title = document.createElement('h2');
+      title.className = 'section-title';
+      title.textContent = section.title;
+      sectionEl.appendChild(title);
+
+      const grid = document.createElement('div');
+      grid.className = 'grid';
+
+      for (const icon of section.icons) {
+        const card = document.createElement('div');
+        card.className = 'card';
+
+        const frame = document.createElement('div');
+        frame.className = 'frame';
+
+        const img = document.createElement('img');
+        img.alt = icon.replace('.svg', '');
+        img.src = `${icon}?v=${versionToken}`;
+
+        const nameRow = document.createElement('div');
+        nameRow.className = 'name-row';
+
+        const name = document.createElement('div');
+        name.className = 'name';
+        name.textContent = icon;
+
+        const rejectBtn = document.createElement('button');
+        rejectBtn.className = 'reject-btn';
+        rejectBtn.title = 'Mark for deletion';
+        rejectBtn.dataset.icon = icon;
+        rejectBtn.dataset.section = section.title;
+        rejectBtn.innerHTML = '<svg viewBox="0 0 14 14" fill="none"><path d="M3 3L11 11M11 3L3 11" stroke-width="2.5" stroke-linecap="round"/></svg>';
+        rejectBtn.addEventListener('click', function() {
+          this.classList.toggle('active');
+          card.classList.toggle('rejected');
+          updateCount();
+        });
+
+        nameRow.appendChild(name);
+        nameRow.appendChild(rejectBtn);
+
+        const feedback = document.createElement('div');
+        feedback.className = 'feedback';
+
+        const textarea = document.createElement('textarea');
+        textarea.placeholder = 'Feedback…';
+        textarea.dataset.icon = icon;
+        textarea.dataset.section = section.title;
+        textarea.addEventListener('input', function() {
+          this.classList.toggle('has-content', this.value.trim().length > 0);
+          updateCount();
+        });
+
+        feedback.appendChild(textarea);
+        frame.appendChild(img);
+        card.appendChild(frame);
+        card.appendChild(nameRow);
+        card.appendChild(feedback);
+        grid.appendChild(card);
+      }
+
+      sectionEl.appendChild(grid);
+      container.appendChild(sectionEl);
+    }
+
+    function updateCount() {
+      const all = document.querySelectorAll('.feedback textarea');
+      const filled = Array.from(all).filter(t => t.value.trim().length > 0);
+      const rejected = document.querySelectorAll('.reject-btn.active').length;
+      const el = document.getElementById('feedback-count');
+      const parts = [];
+      if (rejected > 0) parts.push(`${rejected} rejected`);
+      if (filled.length > 0) parts.push(`${filled.length} with feedback`);
+      el.textContent = parts.length > 0 ? parts.join(' · ') : '';
+    }
+
+    function copyFeedback() {
+      const all = document.querySelectorAll('.feedback textarea');
+      const entries = Array.from(all)
+        .filter(t => t.value.trim().length > 0)
+        .map(t => `- **${t.dataset.icon}** (${t.dataset.section}): ${t.value.trim()}`);
+
+      if (entries.length === 0) {
+        navigator.clipboard.writeText('No feedback yet.');
+        return;
+      }
+
+      const text = `# Icon Feedback (${entries.length} icons)\n\n${entries.join('\n')}`;
+      navigator.clipboard.writeText(text).then(() => {
+        const btn = document.querySelector('.toolbar .primary');
+        const orig = btn.textContent;
+        btn.textContent = 'Copied!';
+        setTimeout(() => btn.textContent = orig, 1500);
+      });
+    }
+
+    function copyRejected() {
+      const rejected = Array.from(document.querySelectorAll('.reject-btn.active'))
+        .map(btn => `- ${btn.dataset.icon} (${btn.dataset.section})`);
+
+      if (rejected.length === 0) {
+        navigator.clipboard.writeText('No icons rejected.');
+        return;
+      }
+
+      const text = `# Icons to Delete (${rejected.length})\n\n${rejected.join('\n')}`;
+      navigator.clipboard.writeText(text).then(() => {
+        const btns = document.querySelectorAll('.toolbar .primary');
+        const btn = btns[1];
+        const orig = btn.textContent;
+        btn.textContent = `Copied ${rejected.length}!`;
+        setTimeout(() => btn.textContent = orig, 1500);
+      });
+    }
+
+    function clearAll() {
+      if (!confirm('Clear all feedback and rejections?')) return;
+      document.querySelectorAll('.feedback textarea').forEach(t => {
+        t.value = '';
+        t.classList.remove('has-content');
+      });
+      document.querySelectorAll('.reject-btn.active').forEach(btn => {
+        btn.classList.remove('active');
+        btn.closest('.card').classList.remove('rejected');
+      });
+      updateCount();
+    }
+  </script>
+</body>
+</html>

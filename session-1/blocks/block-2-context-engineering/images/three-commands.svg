@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 30 1920 860" fill="none">
+<rect x="0" y="30" width="1920" height="860" rx="12" fill="#FFFFFF"/>
+
+<!-- Panel 1: /context (GRAY) -->
+<rect x="60" y="60" width="560" height="800" rx="16" fill="#F3F4F6" stroke="#D1D5DB" stroke-width="2"/>
+<text x="340" y="300" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="52" font-weight="800" fill="#374151">/context</text>
+<text x="340" y="400" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="600" fill="#374151">"What's on my desk?"</text>
+<text x="340" y="480" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" fill="#6B7280">Shows what's in the</text>
+<text x="340" y="520" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" fill="#6B7280">context window. No changes.</text>
+
+<!-- Arrow 1 to 2 -->
+<line x1="640" y1="460" x2="690" y2="460" stroke="#9CA3AF" stroke-width="2.5"/>
+<polygon points="688,453 704,460 688,467" fill="#9CA3AF"/>
+
+<!-- Panel 2: /compact (GREEN) -->
+<rect x="720" y="60" width="560" height="800" rx="16" fill="#D6F5E8" stroke="#00BD78" stroke-width="2"/>
+<text x="1000" y="300" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="52" font-weight="800" fill="#374151">/compact</text>
+<text x="1000" y="380" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="600" fill="#374151">"Clean up my desk,</text>
+<text x="1000" y="420" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="600" fill="#374151">keep important stuff"</text>
+<text x="1000" y="500" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" fill="#6B7280">Compresses conversation.</text>
+<text x="1000" y="540" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" fill="#6B7280">Session continues.</text>
+
+<!-- Arrow 2 to 3 -->
+<line x1="1300" y1="460" x2="1350" y2="460" stroke="#9CA3AF" stroke-width="2.5"/>
+<polygon points="1348,453 1364,460 1348,467" fill="#9CA3AF"/>
+
+<!-- Panel 3: /clear (AMBER) -->
+<rect x="1380" y="60" width="500" height="800" rx="16" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
+<text x="1630" y="300" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="52" font-weight="800" fill="#374151">/clear</text>
+<text x="1630" y="400" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="600" fill="#374151">"New desk. New day."</text>
+<text x="1630" y="480" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" fill="#6B7280">Wipes everything.</text>
+<text x="1630" y="520" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" fill="#6B7280">Fresh start. No recovery.</text>
+
+</svg>

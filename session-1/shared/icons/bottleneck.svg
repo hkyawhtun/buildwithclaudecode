@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- Green accent: bottom half of hourglass -->
+  <path d="M22 40L32 32L42 40V50C42 52.21 40.21 54 38 54H26C23.79 54 22 52.21 22 50V40Z" fill="#5DCEA5"/>
+  <!-- Hourglass/funnel shape -->
+  <path d="M22 14C22 11.79 23.79 10 26 10H38C40.21 10 42 11.79 42 14V24L32 32L22 24V14Z" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M22 40L32 32L42 40V50C42 52.21 40.21 54 38 54H26C23.79 54 22 52.21 22 50V40Z" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Narrow neck lines -->
+  <path d="M18 10H46" stroke="#000000" stroke-width="4" stroke-linecap="round"/>
+  <path d="M18 54H46" stroke="#000000" stroke-width="4" stroke-linecap="round"/>
+</svg>
