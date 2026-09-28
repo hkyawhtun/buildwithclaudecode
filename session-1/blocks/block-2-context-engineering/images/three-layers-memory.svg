@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 30 1920 980" fill="none">
+<rect x="0" y="30" width="1920" height="980" rx="12" fill="#FFFFFF"/>
+
+<!-- Column 1: CLAUDE.md (GREEN) -->
+<rect x="60" y="60" width="560" height="680" rx="16" fill="#D6F5E8" stroke="#00BD78" stroke-width="2"/>
+<text x="340" y="140" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="40" font-weight="700" fill="#374151">CLAUDE.md</text>
+
+<text x="340" y="240" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="600" fill="#374151">Team Knowledge</text>
+<text x="340" y="280" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" fill="#6B7280">Conventions, commands, architecture</text>
+
+<text x="340" y="370" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="600" fill="#374151">Committed to Git</text>
+<text x="340" y="410" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" fill="#6B7280">Shared with the whole team</text>
+
+<text x="340" y="500" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="600" fill="#374151">Loads Every Session</text>
+<text x="340" y="540" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" fill="#6B7280">Always present in context</text>
+
+<!-- Column 2: Second Brain (GRAY, dashed) -->
+<rect x="680" y="60" width="560" height="680" rx="16" fill="#F3F4F6" stroke="#D1D5DB" stroke-width="2" stroke-dasharray="8 4"/>
+<text x="960" y="140" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="40" font-weight="700" fill="#374151">Second Brain</text>
+
+<text x="960" y="240" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="600" fill="#374151">Personal Knowledge</text>
+<text x="960" y="280" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" fill="#6B7280">Insights, gotchas, decisions</text>
+
+<text x="960" y="370" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="600" fill="#374151">Local / .gitignored</text>
+<text x="960" y="410" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" fill="#6B7280">Private to your machine</text>
+
+<text x="960" y="500" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="600" fill="#374151">Loaded on Demand</text>
+<text x="960" y="540" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" fill="#6B7280">You choose what to pull in</text>
+
+<!-- Column 3: Auto Memory (GREEN) -->
+<rect x="1300" y="60" width="560" height="680" rx="16" fill="#D6F5E8" stroke="#00BD78" stroke-width="2"/>
+<text x="1580" y="140" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="40" font-weight="700" fill="#374151">Auto Memory</text>
+
+<text x="1580" y="240" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="600" fill="#374151">Claude's Learnings</text>
+<text x="1580" y="280" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" fill="#6B7280">Corrections, preferences, context</text>
+
+<text x="1580" y="370" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="600" fill="#374151">Saved Automatically</text>
+<text x="1580" y="410" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" fill="#6B7280">When you tell Claude to remember</text>
+
+<text x="1580" y="500" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="600" fill="#374151">First 200 Lines</text>
+<text x="1580" y="540" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" fill="#6B7280">Loaded at session start</text>
+
+<!-- Arrows down to shared bar -->
+<line x1="340" y1="740" x2="340" y2="820" stroke="#9CA3AF" stroke-width="2"/>
+<polygon points="334,815 340,830 346,815" fill="#9CA3AF"/>
+<line x1="960" y1="740" x2="960" y2="820" stroke="#9CA3AF" stroke-width="2"/>
+<polygon points="954,815 960,830 966,815" fill="#9CA3AF"/>
+<line x1="1580" y1="740" x2="1580" y2="820" stroke="#9CA3AF" stroke-width="2"/>
+<polygon points="1574,815 1580,830 1586,815" fill="#9CA3AF"/>
+
+<!-- Shared Context Window bar -->
+<rect x="60" y="840" width="1800" height="140" rx="16" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
+<text x="960" y="910" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="36" font-weight="700" fill="#374151">Context Window</text>
+<text x="960" y="955" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" fill="#6B7280">All three layers feed into Claude's finite working memory</text>
+
+</svg>

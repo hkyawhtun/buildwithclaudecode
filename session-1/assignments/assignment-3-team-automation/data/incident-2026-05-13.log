@@ -1,0 +1,160 @@
+2026-05-13T14:00:00.024Z [INFO ] api.search: indexed 131 documents in 243ms
+2026-05-13T14:00:00.227Z [ERROR] api.users: unhandled exception: TypeError: cannot read property 'id' of undefined
+2026-05-13T14:00:00.433Z [WARN ] cache.redis: memory pressure: 89% of max
+2026-05-13T14:00:00.522Z [INFO ] api.gateway: handled GET /v1/feed in 311ms
+2026-05-13T14:00:00.571Z [ERROR] db.pool: exhausted: 100/100 connections in use, 47 waiting
+2026-05-13T14:00:00.738Z [INFO ] cache.redis: evicted 465 keys, memory at 94%
+2026-05-13T14:00:00.793Z [ERROR] api.checkout: upstream timeout: billing.stripe took >10000ms
+2026-05-13T14:00:00.957Z [INFO ] api.gateway: handled GET /v1/feed in 599ms
+-- corrupted line: 1168c7a8 handled GET /v1/feed
+2026-05-13T14:00:01.296Z [WARN ] queue.worker: job 84087 retry attempt 160
+2026-05-13T14:00:01.398Z [WARN ] cache.redis: memory pressure: 90% of max
+2026-05-13T14:00:01.564Z [ERROR] deploy.runner: image pull failed: registry.internal/api-checkout:v2.18.7 not found
+2026-05-13T14:00:01.598Z [WARN ] cache.redis: memory pressure: 90% of max
+2026-05-13T14:00:01.658Z [WARN ] api.gateway: rate limit approaching for client_id=15506
+2026-05-13T14:00:01.732Z [INFO ] api.search: indexed 384 documents in 290ms
+2026-05-13T14:00:01.758Z [INFO ] queue.worker: processed job 67883 in 292ms
+2026-05-13T14:00:01.857Z [ERROR] api.checkout: upstream timeout: billing.stripe took >10000ms
+2026-05-13T14:00:01.977Z [WARN ] api.gateway: rate limit approaching for client_id=20404
+2026-05-13T14:00:02.184Z [WARN ] cache.redis: memory pressure: 86% of max
+2026-05-13T14:00:02.230Z [ERROR] auth.jwt: token verification failed: signature mismatch user_id=77783
+2026-05-13T14:00:02.296Z [ERROR] billing.stripe: request failed: ETIMEDOUT after 10000ms
+2026-05-13T14:00:02.428Z [ERROR] auth.jwt: token verification failed: signature mismatch user_id=84242
+2026-05-13T14:00:02.501Z [ERROR] api.checkout: upstream timeout: billing.stripe took >10000ms
+2026-05-13T14:00:02.517Z [WARN ] db.pool: connection pool 79% utilized
+2026-05-13T14:00:02.542Z [INFO ] api.search: indexed 410 documents in 287ms
+2026-05-13T14:00:02.610Z [ERROR] db.pool: exhausted: 100/100 connections in use, 47 waiting
+2026-05-13T14:00:02.765Z [INFO ] api.gateway: handled GET /v1/users/22769 in 796ms
+2026-05-13T14:00:02.884Z [ERROR] db.postgres: deadlock detected on table=orders txn=54380
+2026-05-13T14:00:03.062Z [INFO ] queue.worker: processed job 97627 in 67ms
+2026-05-13T14:00:03.257Z [INFO ] api.gateway: handled GET /v1/users/64306 in 444ms
+2026-05-13T14:00:03.366Z [WARN ] cache.redis: memory pressure: 87% of max
+2026-05-13T14:00:03.554Z [ERROR] deploy.runner: rollout aborted: health check failed pod=70187
+2026-05-13T14:00:03.710Z [INFO ] api.gateway: handled GET /v1/feed in 489ms
+2026-05-13T14:00:03.875Z [INFO ] cache.redis: evicted 125 keys, memory at 76%
+2026-05-13T14:00:04.011Z [ERROR] api.checkout: upstream timeout: billing.stripe took >10000ms
+2026-05-13T14:00:04.034Z [INFO ] queue.worker: processed job 69572 in 696ms
+2026-05-13T14:00:04.194Z [ERROR] auth.jwt: token verification failed: signature mismatch user_id=18639
+2026-05-13T14:00:04.261Z [INFO ] api.gateway: handled POST /v1/checkout in 259ms
+2026-05-13T14:00:04.327Z [INFO ] api.gateway: handled GET /v1/users/64923 in 301ms
+2026-05-13T14:00:04.462Z [INFO ] queue.worker: processed job 36792 in 78ms
+2026-05-13T14:00:04.540Z [INFO ] cache.redis: evicted 264 keys, memory at 83%
+2026-05-13T14:00:04.622Z [INFO ] api.gateway: handled GET /v1/users/73420 in 314ms
+2026-05-13T14:00:04.698Z [ERROR] db.postgres: connection refused: host=db-primary-1.internal port=5432
+2026-05-13T14:00:04.734Z [INFO ] api.search: indexed 58 documents in 93ms
+2026-05-13T14:00:04.905Z [INFO ] api.search: indexed 20 documents in 172ms
+2026-05-13T14:00:04.971Z [ERROR] billing.stripe: request failed: ETIMEDOUT after 10000ms
+2026-05-13T14:00:05.070Z [ERROR] api.search: upstream connection reset: search-cluster-2
+2026-05-13T14:00:05.124Z [ERROR] api.feed: feature flag missing: experiment=new-feed-ranker
+2026-05-13T14:00:05.148Z [WARN ] db.pool: connection pool 77% utilized
+2026-05-13T14:00:05.254Z [INFO ] api.gateway: handled GET /v1/users/42446 in 225ms
+2026-05-13T14:00:05.296Z [ERROR] deploy.runner: rollout aborted: health check failed pod=28708
+2026-05-13T14:00:05.463Z [INFO ] cache.redis: evicted 209 keys, memory at 97%
+-- corrupted line: 7e90241 connection refused: 
+2026-05-13T14:00:05.651Z [INFO ] api.search: indexed 165 documents in 769ms
+2026-05-13T14:00:05.675Z [INFO ] api.gateway: handled GET /v1/feed in 404ms
+2026-05-13T14:00:05.829Z [INFO ] api.search: indexed 414 documents in 639ms
+2026-05-13T14:00:06.020Z [INFO ] api.gateway: handled POST /v1/checkout in 684ms
+2026-05-13T14:00:06.221Z [ERROR] auth.jwt: token verification failed: signature mismatch user_id=77543
+2026-05-13T14:00:06.301Z [INFO ] api.gateway: handled POST /v1/checkout in 691ms
+2026-05-13T14:00:06.433Z [INFO ] api.gateway: handled GET /v1/feed in 780ms
+2026-05-13T14:00:06.603Z [WARN ] api.gateway: rate limit approaching for client_id=24028
+2026-05-13T14:00:06.768Z [INFO ] cache.redis: evicted 174 keys, memory at 73%
+2026-05-13T14:00:06.801Z [INFO ] api.search: indexed 57 documents in 452ms
+2026-05-13T14:00:06.971Z [ERROR] api.users: unhandled exception: TypeError: cannot read property 'id' of undefined
+2026-05-13T14:00:07.008Z [INFO ] api.gateway: handled GET /v1/users/93410 in 284ms
+2026-05-13T14:00:07.114Z [ERROR] api.checkout: upstream timeout: billing.stripe took >10000ms
+2026-05-13T14:00:07.159Z [INFO ] queue.worker: processed job 47899 in 580ms
+2026-05-13T14:00:07.280Z [ERROR] api.checkout: upstream timeout: billing.stripe took >10000ms
+2026-05-13T14:00:07.293Z [WARN ] db.pool: connection pool 99% utilized
+2026-05-13T14:00:07.458Z [INFO ] queue.worker: processed job 82996 in 772ms
+2026-05-13T14:00:07.600Z [INFO ] api.gateway: handled POST /v1/checkout in 554ms
+2026-05-13T14:00:07.720Z [INFO ] api.gateway: handled GET /v1/users/19202 in 126ms
+2026-05-13T14:00:07.835Z [INFO ] queue.worker: processed job 59871 in 23ms
+2026-05-13T14:00:07.899Z [INFO ] api.gateway: handled GET /v1/feed in 776ms
+2026-05-13T14:00:07.945Z [WARN ] db.pool: connection pool 77% utilized
+2026-05-13T14:00:08.039Z [ERROR] auth.jwt: invalid issuer: expected=mesh.io got=evil.example user_id=60531
+-- corrupted line: 39f74b9e job {id} retry attem
+2026-05-13T14:00:08.324Z [INFO ] queue.worker: processed job 22905 in 735ms
+2026-05-13T14:00:08.350Z [ERROR] deploy.runner: container crashed: exit_code=139 image=api-gateway:v3.41.2
+-- corrupted line: 20e083c7 evicted {n} keys, me
+2026-05-13T14:00:08.623Z [ERROR] billing.stripe: request failed: ETIMEDOUT after 10000ms
+2026-05-13T14:00:08.800Z [WARN ] db.pool: connection pool 92% utilized
+2026-05-13T14:00:08.826Z [INFO ] queue.worker: processed job 73432 in 319ms
+2026-05-13T14:00:08.957Z [ERROR] api.users: unhandled exception: TypeError: cannot read property 'id' of undefined
+2026-05-13T14:00:08.989Z [INFO ] api.gateway: handled GET /v1/users/14145 in 551ms
+2026-05-13T14:00:09.015Z [ERROR] api.search: upstream connection reset: search-cluster-2
+2026-05-13T14:00:09.114Z [INFO ] queue.worker: processed job 42169 in 345ms
+2026-05-13T14:00:09.233Z [ERROR] auth.jwt: invalid issuer: expected=mesh.io got=evil.example user_id=81638
+2026-05-13T14:00:09.257Z [INFO ] api.gateway: handled GET /v1/users/45938 in 391ms
+2026-05-13T14:00:09.314Z [INFO ] api.search: indexed 87 documents in 160ms
+2026-05-13T14:00:09.326Z [ERROR] api.feed: feature flag missing: experiment=new-feed-ranker
+-- corrupted line: 380f36bd image pull failed: r
+2026-05-13T14:00:09.498Z [ERROR] deploy.runner: rollout aborted: health check failed pod=10320
+2026-05-13T14:00:09.668Z [INFO ] cache.redis: evicted 17 keys, memory at 91%
+2026-05-13T14:00:09.779Z [INFO ] cache.redis: evicted 381 keys, memory at 94%
+2026-05-13T14:00:09.987Z [INFO ] api.gateway: handled GET /v1/feed in 367ms
+2026-05-13T14:00:10.140Z [INFO ] api.search: indexed 403 documents in 123ms
+2026-05-13T14:00:10.197Z [WARN ] queue.worker: job 70251 retry attempt 179
+2026-05-13T14:00:10.322Z [ERROR] auth.jwt: token expired: iat=1748146034 exp=1790405311 user_id=97726
+2026-05-13T14:00:10.416Z [INFO ] api.gateway: handled GET /v1/feed in 173ms
+-- corrupted line: 6b30947 connection pool {pct
+2026-05-13T14:00:10.524Z [ERROR] deploy.runner: rollout aborted: health check failed pod=43784
+2026-05-13T14:00:10.730Z [INFO ] queue.worker: processed job 23364 in 332ms
+2026-05-13T14:00:10.875Z [WARN ] db.pool: connection pool 70% utilized
+2026-05-13T14:00:10.961Z [WARN ] cache.redis: memory pressure: 72% of max
+2026-05-13T14:00:11.024Z [INFO ] queue.worker: processed job 96467 in 678ms
+2026-05-13T14:00:11.084Z [ERROR] billing.stripe: request failed: ETIMEDOUT after 10000ms
+2026-05-13T14:00:11.212Z [ERROR] db.postgres: connection refused: host=db-primary-1.internal port=5432
+2026-05-13T14:00:11.363Z [ERROR] auth.jwt: token expired: iat=1767577735 exp=1778992819 user_id=35289
+2026-05-13T14:00:11.437Z [ERROR] billing.stripe: request failed: ETIMEDOUT after 10000ms
+2026-05-13T14:00:11.447Z [WARN ] cache.redis: memory pressure: 74% of max
+2026-05-13T14:00:11.593Z [ERROR] auth.jwt: token expired: iat=1702117402 exp=1787178003 user_id=20838
+2026-05-13T14:00:11.604Z [WARN ] db.pool: connection pool 88% utilized
+2026-05-13T14:00:11.692Z [ERROR] db.postgres: connection refused: host=db-primary-1.internal port=5432
+2026-05-13T14:00:11.848Z [INFO ] queue.worker: processed job 13438 in 790ms
+2026-05-13T14:00:11.895Z [INFO ] api.gateway: handled GET /v1/feed in 236ms
+2026-05-13T14:00:11.988Z [INFO ] api.gateway: handled GET /v1/feed in 110ms
+2026-05-13T14:00:12.169Z [WARN ] queue.worker: job 67937 retry attempt 83
+2026-05-13T14:00:12.278Z [INFO ] api.gateway: handled POST /v1/checkout in 78ms
+2026-05-13T14:00:12.321Z [INFO ] queue.worker: processed job 52256 in 424ms
+2026-05-13T14:00:12.362Z [ERROR] api.users: unhandled exception: TypeError: cannot read property 'id' of undefined
+2026-05-13T14:00:12.394Z [WARN ] cache.redis: memory pressure: 94% of max
+2026-05-13T14:00:12.478Z [INFO ] api.gateway: handled POST /v1/checkout in 682ms
+2026-05-13T14:00:12.560Z [WARN ] api.gateway: rate limit approaching for client_id=81832
+2026-05-13T14:00:12.625Z [INFO ] cache.redis: evicted 122 keys, memory at 77%
+2026-05-13T14:00:12.777Z [ERROR] db.pool: exhausted: 100/100 connections in use, 47 waiting
+2026-05-13T14:00:12.868Z [INFO ] api.gateway: handled GET /v1/users/73407 in 779ms
+2026-05-13T14:00:12.891Z [INFO ] api.gateway: handled GET /v1/users/54986 in 618ms
+2026-05-13T14:00:12.911Z [INFO ] api.gateway: handled POST /v1/checkout in 507ms
+2026-05-13T14:00:13.112Z [INFO ] cache.redis: evicted 342 keys, memory at 72%
+2026-05-13T14:00:13.187Z [INFO ] api.search: indexed 476 documents in 781ms
+2026-05-13T14:00:13.262Z [ERROR] queue.worker: fetch failed: ECONNREFUSED downstream=metrics.internal:9090
+2026-05-13T14:00:13.311Z [INFO ] api.gateway: handled GET /v1/users/79482 in 617ms
+2026-05-13T14:00:13.430Z [INFO ] api.gateway: handled GET /v1/feed in 338ms
+-- corrupted line: b623261 rate limit approachi
+2026-05-13T14:00:13.688Z [INFO ] queue.worker: processed job 68922 in 323ms
+2026-05-13T14:00:13.794Z [INFO ] queue.worker: processed job 12084 in 374ms
+2026-05-13T14:00:13.859Z [WARN ] cache.redis: memory pressure: 93% of max
+2026-05-13T14:00:14.066Z [WARN ] api.gateway: rate limit approaching for client_id=71354
+2026-05-13T14:00:14.205Z [ERROR] db.pool: exhausted: 100/100 connections in use, 47 waiting
+2026-05-13T14:00:14.368Z [WARN ] queue.worker: job 96598 retry attempt 235
+2026-05-13T14:00:14.552Z [ERROR] db.postgres: query timeout after 30000ms query="SELECT * FROM orders WHERE user_id=$1"
+2026-05-13T14:00:14.668Z [INFO ] cache.redis: evicted 234 keys, memory at 75%
+2026-05-13T14:00:14.807Z [INFO ] api.search: indexed 389 documents in 374ms
+-- corrupted line: 2f47258 evicted {n} keys, me
+2026-05-13T14:00:14.997Z [ERROR] db.postgres: deadlock detected on table=orders txn=29533
+2026-05-13T14:00:15.167Z [INFO ] api.gateway: handled GET /v1/users/36563 in 581ms
+2026-05-13T14:00:15.302Z [ERROR] auth.jwt: token verification failed: signature mismatch user_id=10576
+2026-05-13T14:00:15.451Z [INFO ] api.gateway: handled GET /v1/users/27516 in 609ms
+2026-05-13T14:00:15.494Z [INFO ] api.gateway: handled POST /v1/checkout in 147ms
+2026-05-13T14:00:15.556Z [INFO ] api.gateway: handled GET /v1/feed in 211ms
+2026-05-13T14:00:15.580Z [ERROR] api.users: unhandled exception: TypeError: cannot read property 'id' of undefined
+2026-05-13T14:00:15.613Z [INFO ] api.gateway: handled GET /v1/feed in 640ms
+2026-05-13T14:00:15.629Z [INFO ] api.search: indexed 60 documents in 776ms
+-- corrupted line: 1ca7626c handled GET /v1/user
+2026-05-13T14:00:15.970Z [WARN ] db.pool: connection pool 91% utilized
+2026-05-13T14:00:16.137Z [WARN ] cache.redis: memory pressure: 95% of max
+2026-05-13T14:00:16.338Z [INFO ] api.search: indexed 49 documents in 219ms
+-- corrupted line: 297b98ec handled GET /v1/user
+2026-05-13T14:00:16.554Z [INFO ] api.gateway: handled POST /v1/checkout in 321ms

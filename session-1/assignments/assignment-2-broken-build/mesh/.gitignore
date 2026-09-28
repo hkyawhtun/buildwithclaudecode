@@ -1,0 +1,8 @@
+node_modules
+dist
+.DS_Store
+*.log
+
+# Bundled ML model + ORT runtime — fetched by `npm run setup` (postinstall).
+public/models/
+public/wasm/

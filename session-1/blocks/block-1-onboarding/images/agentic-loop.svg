@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 170 1920 780" fill="none">
+<rect x="0" y="170" width="1920" height="780" rx="12" fill="#FFFFFF"/>
+
+<!-- Step 1: Gather Context -->
+<rect x="100" y="200" width="480" height="280" rx="12" fill="#D6F5E8" stroke="#00BD78" stroke-width="2"/>
+<text x="340" y="310" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="40" font-weight="700" fill="#374151">Gather Context</text>
+<text x="340" y="370" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="26" fill="#6B7280">Read files, search code,</text>
+<text x="340" y="405" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="26" fill="#6B7280">understand the problem</text>
+
+<!-- Arrow 1 to 2 -->
+<line x1="580" y1="340" x2="700" y2="340" stroke="#9CA3AF" stroke-width="2"/>
+<polygon points="696,333 712,340 696,347" fill="#9CA3AF"/>
+
+<!-- Step 2: Take Action -->
+<rect x="720" y="200" width="480" height="280" rx="12" fill="#D6F5E8" stroke="#00BD78" stroke-width="2"/>
+<text x="960" y="310" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="40" font-weight="700" fill="#374151">Take Action</text>
+<text x="960" y="370" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="26" fill="#6B7280">Write code, edit files,</text>
+<text x="960" y="405" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="26" fill="#6B7280">run commands</text>
+
+<!-- Arrow 2 to 3 -->
+<line x1="1200" y1="340" x2="1320" y2="340" stroke="#9CA3AF" stroke-width="2"/>
+<polygon points="1316,333 1332,340 1316,347" fill="#9CA3AF"/>
+
+<!-- Step 3: Verify Results -->
+<rect x="1340" y="200" width="480" height="280" rx="12" fill="#D6F5E8" stroke="#00BD78" stroke-width="2"/>
+<text x="1580" y="310" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="40" font-weight="700" fill="#374151">Verify Results</text>
+<text x="1580" y="370" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="26" fill="#6B7280">Run tests, check output,</text>
+<text x="1580" y="405" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="26" fill="#6B7280">validate correctness</text>
+
+<!-- Loop-back arrow -->
+<path d="M1580 480 L1580 570 Q1580 600 1550 600 L370 600 Q340 600 340 570 L340 480" fill="none" stroke="#9CA3AF" stroke-width="2"/>
+<polygon points="333,484 340,468 347,484" fill="#9CA3AF"/>
+<text x="960" y="640" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" font-weight="600" fill="#9CA3AF">REPEAT UNTIL DONE</text>
+
+<!-- You element -->
+<rect x="560" y="760" width="800" height="160" rx="12" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
+<text x="960" y="830" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="36" font-weight="700" fill="#374151">You: interrupt, steer, add context</text>
+<text x="960" y="878" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="26" fill="#6B7280">Jump in at any point in the loop</text>
+
+<!-- Dashed arrow from You to loop -->
+<line x1="960" y1="760" x2="960" y2="610" stroke="#D1D5DB" stroke-width="2" stroke-dasharray="8 4"/>
+<polygon points="953,614 960,600 967,614" fill="#D1D5DB"/>
+
+</svg>

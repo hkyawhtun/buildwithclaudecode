@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 30 1920 960" fill="none">
+<rect x="0" y="30" width="1920" height="960" rx="12" fill="#FFFFFF"/>
+
+<!-- Row 1 -->
+
+<!-- /clear -->
+<rect x="80" y="60" width="400" height="420" rx="12" fill="#D6F5E8" stroke="#00BD78" stroke-width="2"/>
+<text x="280" y="220" text-anchor="middle" font-family="ui-monospace, monospace" font-size="44" font-weight="700" fill="#374151">/clear</text>
+<text x="280" y="290" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#374151">Reset</text>
+<text x="280" y="340" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" fill="#6B7280">Clear conversation history</text>
+
+<!-- /compact -->
+<rect x="530" y="60" width="400" height="420" rx="12" fill="#D6F5E8" stroke="#00BD78" stroke-width="2"/>
+<text x="730" y="220" text-anchor="middle" font-family="ui-monospace, monospace" font-size="44" font-weight="700" fill="#374151">/compact</text>
+<text x="730" y="290" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#374151">Summarize</text>
+<text x="730" y="340" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" fill="#6B7280">Reclaim context window</text>
+
+<!-- /init -->
+<rect x="980" y="60" width="400" height="420" rx="12" fill="#D6F5E8" stroke="#00BD78" stroke-width="2"/>
+<text x="1180" y="220" text-anchor="middle" font-family="ui-monospace, monospace" font-size="44" font-weight="700" fill="#374151">/init</text>
+<text x="1180" y="290" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#374151">Bootstrap</text>
+<text x="1180" y="340" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" fill="#6B7280">Generate CLAUDE.md from repo</text>
+
+<!-- /loop -->
+<rect x="1430" y="60" width="400" height="420" rx="12" fill="#D6F5E8" stroke="#00BD78" stroke-width="2"/>
+<text x="1630" y="220" text-anchor="middle" font-family="ui-monospace, monospace" font-size="44" font-weight="700" fill="#374151">/loop</text>
+<text x="1630" y="290" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#374151">Repeat</text>
+<text x="1630" y="340" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" fill="#6B7280">Run on a recurring interval</text>
+
+<!-- Row 2 -->
+
+<!-- /model -->
+<rect x="80" y="540" width="400" height="420" rx="12" fill="#D6F5E8" stroke="#00BD78" stroke-width="2"/>
+<text x="280" y="700" text-anchor="middle" font-family="ui-monospace, monospace" font-size="44" font-weight="700" fill="#374151">/model</text>
+<text x="280" y="770" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#374151">Switch</text>
+<text x="280" y="820" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" fill="#6B7280">Change model mid-session</text>
+
+<!-- /context -->
+<rect x="530" y="540" width="400" height="420" rx="12" fill="#D6F5E8" stroke="#00BD78" stroke-width="2"/>
+<text x="730" y="700" text-anchor="middle" font-family="ui-monospace, monospace" font-size="44" font-weight="700" fill="#374151">/context</text>
+<text x="730" y="770" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#374151">Inspect</text>
+<text x="730" y="820" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" fill="#6B7280">See token usage and files</text>
+
+<!-- /rewind -->
+<rect x="980" y="540" width="400" height="420" rx="12" fill="#D6F5E8" stroke="#00BD78" stroke-width="2"/>
+<text x="1180" y="700" text-anchor="middle" font-family="ui-monospace, monospace" font-size="44" font-weight="700" fill="#374151">/rewind</text>
+<text x="1180" y="770" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#374151">Undo</text>
+<text x="1180" y="820" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" fill="#6B7280">Roll back conversation</text>
+
+<!-- /help -->
+<rect x="1430" y="540" width="400" height="420" rx="12" fill="#D6F5E8" stroke="#00BD78" stroke-width="2"/>
+<text x="1630" y="700" text-anchor="middle" font-family="ui-monospace, monospace" font-size="44" font-weight="700" fill="#374151">/help</text>
+<text x="1630" y="770" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#374151">Guide</text>
+<text x="1630" y="820" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" fill="#6B7280">Show all commands</text>
+
+</svg>

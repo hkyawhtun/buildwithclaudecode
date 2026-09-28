@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Todo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: oklch(98.5% 0.005 80);
+    --bg-elev: oklch(99.5% 0.003 80);
+    --ink: oklch(20% 0.01 80);
+    --ink-2: oklch(45% 0.01 80);
+    --ink-3: oklch(68% 0.008 80);
+    --line: oklch(92% 0.005 80);
+    --line-strong: oklch(86% 0.005 80);
+    --accent: oklch(62% 0.12 35);
+    --accent-soft: oklch(95% 0.025 35);
+    --done: oklch(72% 0.06 145);
+    --danger: oklch(58% 0.16 25);
+    --radius: 10px;
+    --radius-sm: 6px;
+    --shadow-sm: 0 1px 2px oklch(20% 0.01 80 / 0.04);
+    --shadow-md: 0 8px 24px oklch(20% 0.01 80 / 0.06), 0 1px 2px oklch(20% 0.01 80 / 0.04);
+    --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    font-family: "Geist", ui-sans-serif, system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+    font-feature-settings: "ss01", "cv11";
+    font-variant-numeric: tabular-nums;
+    background: var(--bg);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.45;
+  }
+
+  .app {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 72px 24px 120px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 560px;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 36px;
+  }
+  .brand {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  .brand-mark {
+    width: 10px; height: 10px;
+    border-radius: 3px;
+    background: var(--accent);
+    transform: translateY(1px);
+  }
+  .brand-title {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+  .date {
+    font-size: 13px;
+    color: var(--ink-3);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Greeting / progress */
+  .greeting {
+    margin-bottom: 28px;
+  }
+  .greeting h1 {
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    margin: 0 0 6px;
+    line-height: 1.15;
+  }
+  .greeting .meta {
+    font-size: 14px;
+    color: var(--ink-2);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .progress-track {
+    flex: 1;
+    height: 3px;
+    background: var(--line);
+    border-radius: 999px;
+    overflow: hidden;
+    max-width: 140px;
+  }
+  .progress-fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 999px;
+    transition: width 0.5s var(--ease);
+  }
+  .progress-fill.complete { background: var(--done); }
+
+  /* Input */
+  .composer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    background: var(--bg-elev);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    transition: border-color 0.18s var(--ease), box-shadow 0.18s var(--ease);
+    margin-bottom: 24px;
+  }
+  .composer:focus-within {
+    border-color: var(--ink-3);
+    box-shadow: var(--shadow-md);
+  }
+  .composer .plus {
+    width: 18px; height: 18px;
+    flex-shrink: 0;
+    color: var(--ink-3);
+    transition: color 0.18s var(--ease), transform 0.18s var(--ease);
+  }
+  .composer:focus-within .plus { color: var(--accent); transform: rotate(90deg); }
+  .composer input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font: inherit;
+    font-size: 15px;
+    color: var(--ink);
+    padding: 2px 0;
+  }
+  .composer input::placeholder { color: var(--ink-3); }
+  .composer .kbd {
+    font-family: "Geist Mono", ui-monospace, monospace;
+    font-size: 11px;
+    color: var(--ink-3);
+    padding: 3px 7px;
+    border: 1px solid var(--line-strong);
+    border-radius: 5px;
+    background: var(--bg);
+    opacity: 0;
+    transition: opacity 0.18s var(--ease);
+  }
+  .composer:focus-within .kbd { opacity: 1; }
+
+  /* Filters */
+  .filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    padding: 0 4px;
+  }
+  .filter-group {
+    display: flex;
+    gap: 2px;
+  }
+  .filter-btn {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    font: inherit;
+    font-size: 13px;
+    color: var(--ink-3);
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: color 0.15s var(--ease), background 0.15s var(--ease);
+    font-variant-numeric: tabular-nums;
+  }
+  .filter-btn:hover { color: var(--ink); }
+  .filter-btn.active {
+    color: var(--ink);
+    background: var(--line);
+  }
+  .clear-btn {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    font: inherit;
+    font-size: 13px;
+    color: var(--ink-3);
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: color 0.15s var(--ease);
+  }
+  .clear-btn:hover { color: var(--danger); }
+  .clear-btn:disabled { opacity: 0; pointer-events: none; }
+
+  /* List */
+  .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--line);
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 4px;
+    border-bottom: 1px solid var(--line);
+    position: relative;
+    animation: slideIn 0.28s var(--ease);
+  }
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .item.removing {
+    animation: slideOut 0.22s var(--ease) forwards;
+  }
+  @keyframes slideOut {
+    to { opacity: 0; transform: translateX(8px); height: 0; padding-top: 0; padding-bottom: 0; border-color: transparent; }
+  }
+
+  /* Checkbox */
+  .check {
+    appearance: none;
+    width: 18px; height: 18px;
+    border: 1.5px solid var(--line-strong);
+    border-radius: 50%;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    transition: border-color 0.18s var(--ease), background 0.18s var(--ease);
+    position: relative;
+  }
+  .check:hover { border-color: var(--ink-3); }
+  .check::after {
+    content: "";
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--done);
+    transform: scale(0);
+    transition: transform 0.22s var(--ease);
+  }
+  .check:checked { border-color: var(--done); background: oklch(72% 0.06 145 / 0.08); }
+  .check:checked::after { transform: scale(1); }
+
+  /* Label */
+  .label {
+    flex: 1;
+    font-size: 15px;
+    color: var(--ink);
+    cursor: text;
+    padding: 2px 0;
+    border-radius: 4px;
+    outline: 0;
+    word-break: break-word;
+    transition: color 0.25s var(--ease);
+    position: relative;
+  }
+  .label::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 100%;
+    top: 50%;
+    height: 1px;
+    background: var(--ink-3);
+    transition: right 0.3s var(--ease);
+  }
+  .item.done .label { color: var(--ink-3); }
+  .item.done .label::after { right: 0; }
+  .label[contenteditable="true"]:focus { color: var(--ink); }
+  .label[contenteditable="true"]:focus::after { right: 100%; }
+
+  /* Time stamp */
+  .stamp {
+    font-size: 12px;
+    color: var(--ink-3);
+    font-variant-numeric: tabular-nums;
+    flex-shrink: 0;
+    opacity: 0;
+    transition: opacity 0.18s var(--ease);
+  }
+  .item:hover .stamp { opacity: 1; }
+
+  /* Delete */
+  .delete {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    width: 24px; height: 24px;
+    display: grid;
+    place-items: center;
+    border-radius: 6px;
+    cursor: pointer;
+    color: var(--ink-3);
+    opacity: 0;
+    transition: opacity 0.18s var(--ease), color 0.15s var(--ease), background 0.15s var(--ease);
+    flex-shrink: 0;
+  }
+  .item:hover .delete { opacity: 1; }
+  .delete:hover { color: var(--danger); background: oklch(58% 0.16 25 / 0.08); }
+  .delete svg { width: 14px; height: 14px; }
+
+  /* Empty state */
+  .empty {
+    text-align: center;
+    padding: 56px 20px;
+    color: var(--ink-3);
+  }
+  .empty .glyph {
+    width: 36px; height: 36px;
+    margin: 0 auto 14px;
+    border: 1.5px dashed var(--line-strong);
+    border-radius: 50%;
+  }
+  .empty p {
+    margin: 0;
+    font-size: 14px;
+  }
+  .empty .hint {
+    font-family: "Geist Mono", ui-monospace, monospace;
+    font-size: 11px;
+    color: var(--ink-3);
+    margin-top: 12px;
+  }
+  .empty .hint kbd {
+    border: 1px solid var(--line-strong);
+    border-radius: 4px;
+    padding: 1px 5px;
+    background: var(--bg-elev);
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 28px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--ink-3);
+    font-family: "Geist Mono", ui-monospace, monospace;
+  }
+
+  /* Toast (small confirm on clear) */
+  .toast {
+    position: fixed;
+    bottom: 28px;
+    left: 50%;
+    transform: translate(-50%, 20px);
+    background: var(--ink);
+    color: var(--bg);
+    padding: 10px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    box-shadow: var(--shadow-md);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s var(--ease), transform 0.25s var(--ease);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .toast.show { opacity: 1; transform: translate(-50%, 0); pointer-events: auto; }
+  .toast button {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: var(--accent-soft);
+    font: inherit;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  @media (max-width: 520px) {
+    .app { padding: 40px 18px 100px; }
+    .greeting h1 { font-size: 26px; }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: oklch(18% 0.005 80);
+      --bg-elev: oklch(22% 0.005 80);
+      --ink: oklch(96% 0.005 80);
+      --ink-2: oklch(72% 0.005 80);
+      --ink-3: oklch(55% 0.008 80);
+      --line: oklch(28% 0.005 80);
+      --line-strong: oklch(36% 0.008 80);
+      --accent: oklch(72% 0.12 35);
+      --accent-soft: oklch(35% 0.04 35);
+    }
+    .empty .hint kbd, .composer .kbd { background: var(--bg); }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <span class="brand-mark"></span>
+        <h2 class="brand-title">Todo</h2>
+      </div>
+      <span class="date" id="date"></span>
+    </header>
+
+    <section class="greeting">
+      <h1 id="greeting-text">Good morning.</h1>
+      <div class="meta">
+        <span id="counter">0 tasks</span>
+        <div class="progress-track" aria-hidden="true">
+          <div class="progress-fill" id="progress" style="width: 0%"></div>
+        </div>
+      </div>
+    </section>
+
+    <form class="composer" id="composer">
+      <svg class="plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="12" y1="5" x2="12" y2="19"></line>
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+      </svg>
+      <input id="input" type="text" placeholder="What needs to be done?" autocomplete="off" autofocus />
+      <span class="kbd">⏎</span>
+    </form>
+
+    <div class="filters">
+      <div class="filter-group" role="tablist">
+        <button class="filter-btn active" data-filter="all">All <span id="c-all">0</span></button>
+        <button class="filter-btn" data-filter="active">Active <span id="c-active">0</span></button>
+        <button class="filter-btn" data-filter="done">Done <span id="c-done">0</span></button>
+      </div>
+      <button class="clear-btn" id="clear" disabled>Clear completed</button>
+    </div>
+
+    <ul class="list" id="list"></ul>
+
+    <div class="empty" id="empty" hidden>
+      <div class="glyph"></div>
+      <p id="empty-text">Nothing here yet.</p>
+      <div class="hint">Press <kbd>/</kbd> to add a task</div>
+    </div>
+
+    <footer class="footer">
+      <span>saved locally</span>
+    </footer>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status">
+  <span id="toast-text">Cleared</span>
+  <button id="undo">Undo</button>
+</div>
+
+<script>
+(function () {
+  const STORAGE_KEY = "todo.v1";
+  const $ = (s) => document.querySelector(s);
+  const list = $("#list");
+  const input = $("#input");
+  const composer = $("#composer");
+  const empty = $("#empty");
+  const emptyText = $("#empty-text");
+  const counter = $("#counter");
+  const progress = $("#progress");
+  const clearBtn = $("#clear");
+  const dateEl = $("#date");
+  const greet = $("#greeting-text");
+  const toast = $("#toast");
+  const toastText = $("#toast-text");
+  const undoBtn = $("#undo");
+  const cAll = $("#c-all"), cActive = $("#c-active"), cDone = $("#c-done");
+
+  let todos = load();
+  let filter = "all";
+  let lastCleared = null;
+  let toastTimer = null;
+
+  function load() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return seed();
+      const parsed = JSON.parse(raw);
+      return Array.isArray(parsed) ? parsed : seed();
+    } catch (e) { return seed(); }
+  }
+  function seed() {
+    // First-run example tasks — feel like a real list, not lorem ipsum.
+    const now = Date.now();
+    return [
+      { id: uid(), text: "Welcome — click the circle to check this off", done: false, createdAt: now },
+      { id: uid(), text: "Press / anywhere to focus the input", done: false, createdAt: now - 1 },
+      { id: uid(), text: "Double-click a task to edit it", done: false, createdAt: now - 2 },
+    ];
+  }
+  function save() { localStorage.setItem(STORAGE_KEY, JSON.stringify(todos)); }
+  function uid() { return Math.random().toString(36).slice(2, 10); }
+
+  function setDate() {
+    const d = new Date();
+    dateEl.textContent = d.toLocaleDateString(undefined, { weekday: "long", month: "short", day: "numeric" });
+    const h = d.getHours();
+    greet.textContent = h < 5 ? "Late night." : h < 12 ? "Good morning." : h < 18 ? "Good afternoon." : "Good evening.";
+  }
+
+  function timeAgo(ts) {
+    const s = Math.floor((Date.now() - ts) / 1000);
+    if (s < 60) return "just now";
+    if (s < 3600) return Math.floor(s / 60) + "m";
+    if (s < 86400) return Math.floor(s / 3600) + "h";
+    return Math.floor(s / 86400) + "d";
+  }
+
+  function counts() {
+    const total = todos.length;
+    const done = todos.filter(t => t.done).length;
+    return { total, done, active: total - done };
+  }
+
+  function render() {
+    const { total, done, active } = counts();
+
+    cAll.textContent = total;
+    cActive.textContent = active;
+    cDone.textContent = done;
+
+    counter.textContent = total === 0
+      ? "No tasks yet"
+      : active === 0
+        ? `All ${total} done`
+        : `${active} ${active === 1 ? "task" : "tasks"} left`;
+
+    const pct = total === 0 ? 0 : (done / total) * 100;
+    progress.style.width = pct + "%";
+    progress.classList.toggle("complete", total > 0 && done === total);
+
+    clearBtn.disabled = done === 0;
+
+    const visible = todos.filter(t => filter === "all" ? true : filter === "active" ? !t.done : t.done);
+
+    list.innerHTML = "";
+    visible.forEach(t => list.appendChild(renderItem(t)));
+
+    const showEmpty = visible.length === 0;
+    empty.hidden = !showEmpty;
+    list.style.display = showEmpty ? "none" : "";
+    if (showEmpty) {
+      emptyText.textContent =
+        total === 0 ? "Nothing here yet." :
+        filter === "active" ? "All caught up." :
+        "No completed tasks.";
+    }
+
+    save();
+  }
+
+  function renderItem(t) {
+    const li = document.createElement("li");
+    li.className = "item" + (t.done ? " done" : "");
+    li.dataset.id = t.id;
+
+    const cb = document.createElement("input");
+    cb.type = "checkbox";
+    cb.className = "check";
+    cb.checked = t.done;
+    cb.setAttribute("aria-label", "Mark complete");
+    cb.addEventListener("change", () => toggle(t.id));
+
+    const label = document.createElement("div");
+    label.className = "label";
+    label.textContent = t.text;
+    label.setAttribute("role", "textbox");
+    label.addEventListener("dblclick", () => beginEdit(label, t.id));
+    label.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") { e.preventDefault(); label.blur(); }
+      if (e.key === "Escape") { label.textContent = t.text; label.blur(); }
+    });
+    label.addEventListener("blur", () => {
+      label.contentEditable = "false";
+      const v = label.textContent.trim();
+      if (!v) { remove(t.id); return; }
+      if (v !== t.text) { t.text = v; save(); }
+    });
+
+    const stamp = document.createElement("span");
+    stamp.className = "stamp";
+    stamp.textContent = timeAgo(t.createdAt);
+
+    const del = document.createElement("button");
+    del.className = "delete";
+    del.setAttribute("aria-label", "Delete");
+    del.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>';
+    del.addEventListener("click", () => remove(t.id));
+
+    li.append(cb, label, stamp, del);
+    return li;
+  }
+
+  function beginEdit(labelEl, id) {
+    labelEl.contentEditable = "true";
+    labelEl.focus();
+    // place caret at end
+    const range = document.createRange();
+    range.selectNodeContents(labelEl);
+    range.collapse(false);
+    const sel = window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+  }
+
+  function add(text) {
+    const v = text.trim();
+    if (!v) return;
+    todos.unshift({ id: uid(), text: v, done: false, createdAt: Date.now() });
+    render();
+  }
+
+  function toggle(id) {
+    const t = todos.find(x => x.id === id);
+    if (!t) return;
+    t.done = !t.done;
+    t.completedAt = t.done ? Date.now() : null;
+    render();
+  }
+
+  function remove(id) {
+    const li = list.querySelector(`[data-id="${id}"]`);
+    if (li) {
+      li.classList.add("removing");
+      setTimeout(() => {
+        todos = todos.filter(t => t.id !== id);
+        render();
+      }, 200);
+    } else {
+      todos = todos.filter(t => t.id !== id);
+      render();
+    }
+  }
+
+  function clearCompleted() {
+    const cleared = todos.filter(t => t.done);
+    if (!cleared.length) return;
+    lastCleared = cleared;
+    todos = todos.filter(t => !t.done);
+    render();
+    showToast(`Cleared ${cleared.length} completed`);
+  }
+
+  function showToast(msg) {
+    toastText.textContent = msg;
+    toast.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.remove("show"), 4000);
+  }
+
+  function undo() {
+    if (!lastCleared) return;
+    todos = [...lastCleared, ...todos];
+    lastCleared = null;
+    toast.classList.remove("show");
+    render();
+  }
+
+  // Events
+  composer.addEventListener("submit", (e) => {
+    e.preventDefault();
+    add(input.value);
+    input.value = "";
+  });
+
+  document.querySelectorAll(".filter-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      filter = btn.dataset.filter;
+      render();
+    });
+  });
+
+  clearBtn.addEventListener("click", clearCompleted);
+  undoBtn.addEventListener("click", undo);
+
+  // Global shortcuts
+  document.addEventListener("keydown", (e) => {
+    if (e.target === input || (e.target.isContentEditable)) return;
+    if (e.key === "/" && !e.metaKey && !e.ctrlKey) {
+      e.preventDefault();
+      input.focus();
+    }
+    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+      e.preventDefault();
+      input.focus();
+      input.select();
+    }
+  });
+
+  setDate();
+  render();
+  // refresh stamps periodically
+  setInterval(() => {
+    document.querySelectorAll(".item").forEach(li => {
+      const t = todos.find(x => x.id === li.dataset.id);
+      if (!t) return;
+      const stamp = li.querySelector(".stamp");
+      if (stamp) stamp.textContent = timeAgo(t.createdAt);
+    });
+  }, 30000);
+})();
+</script>
+</body>
+</html>

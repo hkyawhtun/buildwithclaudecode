@@ -1,0 +1,26 @@
+{
+  "name": "mesh",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Mesh — second brain. Svelte + d3-force port of the design bundle in ./design.",
+  "scripts": {
+    "setup": "node scripts/fetch-model.mjs",
+    "check:seed": "node scripts/check-seed.mjs",
+    "dev": "vite",
+    "build": "vite build && node scripts/prune-dist.mjs",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./jsconfig.json",
+    "postinstall": "node scripts/fetch-model.mjs"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "svelte": "^5.20.0",
+    "svelte-check": "^4.1.4",
+    "vite": "^6.0.7"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.2.0",
+    "d3-force": "^3.0.0"
+  }
+}

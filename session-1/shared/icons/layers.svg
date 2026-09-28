@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- Green accent: fill behind the middle layer, contained within its shape -->
+  <path d="M12 32L32 22L52 32L32 42L12 32Z" fill="#5DCEA5"/>
+  <!-- Top layer -->
+  <path d="M12 22L32 12L52 22L32 32L12 22Z" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Middle layer -->
+  <path d="M12 32L32 42L52 32" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M12 32L12 22" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0"/>
+  <!-- Bottom layer -->
+  <path d="M12 42L32 52L52 42" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Side connectors -->
+  <path d="M12 22V42" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M52 22V42" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

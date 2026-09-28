@@ -1,0 +1,122 @@
+{
+  "generatedAt": "2026-03-22T22:32:38.156Z",
+  "chromePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+  "targetGreenRatio": {
+    "min": 0.25,
+    "max": 0.35,
+    "center": 0.3
+  },
+  "grid": "/Users/jonny/workspace/cc/course/shared/icons/audit/grid.png",
+  "icons": [
+    {
+      "icon": "brain.svg",
+      "screenshot": "/Users/jonny/workspace/cc/course/shared/icons/audit/icons/brain.png",
+      "greenPixels": 1113,
+      "blackPixels": 2222,
+      "visiblePixels": 3335,
+      "greenRatio": 0.3337,
+      "greenRatioPercent": 33.4,
+      "ratioScore": 83,
+      "ratioStatus": "target"
+    },
+    {
+      "icon": "document.svg",
+      "screenshot": "/Users/jonny/workspace/cc/course/shared/icons/audit/icons/document.png",
+      "greenPixels": 1008,
+      "blackPixels": 2389,
+      "visiblePixels": 3397,
+      "greenRatio": 0.2967,
+      "greenRatioPercent": 29.7,
+      "ratioScore": 98,
+      "ratioStatus": "target"
+    },
+    {
+      "icon": "hook.svg",
+      "screenshot": "/Users/jonny/workspace/cc/course/shared/icons/audit/icons/hook.png",
+      "greenPixels": 287,
+      "blackPixels": 797,
+      "visiblePixels": 1084,
+      "greenRatio": 0.2648,
+      "greenRatioPercent": 26.5,
+      "ratioScore": 82,
+      "ratioStatus": "target"
+    },
+    {
+      "icon": "layers.svg",
+      "screenshot": "/Users/jonny/workspace/cc/course/shared/icons/audit/icons/layers.png",
+      "greenPixels": 2046,
+      "blackPixels": 3834,
+      "visiblePixels": 5880,
+      "greenRatio": 0.348,
+      "greenRatioPercent": 34.8,
+      "ratioScore": 76,
+      "ratioStatus": "target"
+    },
+    {
+      "icon": "loop.svg",
+      "screenshot": "/Users/jonny/workspace/cc/course/shared/icons/audit/icons/loop.png",
+      "greenPixels": 749,
+      "blackPixels": 1647,
+      "visiblePixels": 2396,
+      "greenRatio": 0.3126,
+      "greenRatioPercent": 31.3,
+      "ratioScore": 94,
+      "ratioStatus": "target"
+    },
+    {
+      "icon": "plug.svg",
+      "screenshot": "/Users/jonny/workspace/cc/course/shared/icons/audit/icons/plug.png",
+      "greenPixels": 690,
+      "blackPixels": 1728,
+      "visiblePixels": 2418,
+      "greenRatio": 0.2854,
+      "greenRatioPercent": 28.5,
+      "ratioScore": 93,
+      "ratioStatus": "target"
+    },
+    {
+      "icon": "shield.svg",
+      "screenshot": "/Users/jonny/workspace/cc/course/shared/icons/audit/icons/shield.png",
+      "greenPixels": 846,
+      "blackPixels": 1988,
+      "visiblePixels": 2834,
+      "greenRatio": 0.2985,
+      "greenRatioPercent": 29.9,
+      "ratioScore": 99,
+      "ratioStatus": "target"
+    },
+    {
+      "icon": "split.svg",
+      "screenshot": "/Users/jonny/workspace/cc/course/shared/icons/audit/icons/split.png",
+      "greenPixels": 1217,
+      "blackPixels": 2855,
+      "visiblePixels": 4072,
+      "greenRatio": 0.2989,
+      "greenRatioPercent": 29.9,
+      "ratioScore": 99,
+      "ratioStatus": "target"
+    },
+    {
+      "icon": "team.svg",
+      "screenshot": "/Users/jonny/workspace/cc/course/shared/icons/audit/icons/team.png",
+      "greenPixels": 811,
+      "blackPixels": 2368,
+      "visiblePixels": 3179,
+      "greenRatio": 0.2551,
+      "greenRatioPercent": 25.5,
+      "ratioScore": 78,
+      "ratioStatus": "target"
+    },
+    {
+      "icon": "terminal.svg",
+      "screenshot": "/Users/jonny/workspace/cc/course/shared/icons/audit/icons/terminal.png",
+      "greenPixels": 1125,
+      "blackPixels": 3229,
+      "visiblePixels": 4354,
+      "greenRatio": 0.2584,
+      "greenRatioPercent": 25.8,
+      "ratioScore": 79,
+      "ratioStatus": "target"
+    }
+  ]
+}
